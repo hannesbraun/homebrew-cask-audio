@@ -1,4 +1,3 @@
-# coding: utf-8
 cask 'ragnarok' do
   version '1.2.4'
   sha256 'b11f794a4b4e6f7d7bbdc98c2bf2ce8780effc174e652af5fbca3e9f1395201c'
