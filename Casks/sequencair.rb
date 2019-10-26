@@ -13,4 +13,8 @@ cask 'sequencair' do
                        'com.fullbucket.app.pkg.SequencAir',
                        'com.fullbucket.vst.pkg.SequencAir',
                      ]
+
+  zap trash: [
+               '~/Library/Application Support/FullBucketMusic',
+             ]
 end
