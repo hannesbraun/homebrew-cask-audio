@@ -1,6 +1,6 @@
 cask 'tal-reverb4' do
-  version '2.2.1'
-  sha256 '87d79eee36e961f6b03e7a5141ee03d17b1ca04371ecc5dab2a070447a0e2da7'
+  version '2.2.2'
+  sha256 'ac93367d515cc9153e37e03b804c19fcea822a9ab230c98b90688141f0817b5b'
 
   url 'https://tal-software.com//downloads/plugins/tal-reverb-4-installer.pkg'
   appcast 'https://tal-software.com/products/tal-reverb-4'
