@@ -8,7 +8,7 @@ cask 'ob-xd' do
   name 'OB-Xd'
   homepage 'https://www.discodsp.com/obxd/'
 
-  pkg "Obxd#{version.no_dots}Mac/OB-Xd #{version}.pkg"
+  pkg "OB-Xd #{version}.pkg"
 
   uninstall pkgutil: [
                        'obxdau',
