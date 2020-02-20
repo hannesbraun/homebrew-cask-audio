@@ -14,6 +14,6 @@ cask 'ob-xd' do
                        'obxdau',
                        'obxdcontent',
                        'obxdvst3',
-                       'obxdvst',
+                       'obxdst',
                      ]
 end
