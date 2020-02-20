@@ -15,8 +15,4 @@ cask 'tal-reverb4' do
                        'com.talsoftware.pkg.TAL-Reverb-4-VST',
                        'com.talsoftware.pkg.TAL-Reverb-4-AU',
                      ]
-
-  caveats do
-    reboot
-  end
 end
