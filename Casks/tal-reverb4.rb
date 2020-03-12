@@ -3,7 +3,6 @@ cask 'tal-reverb4' do
   sha256 'aa298b50b0ea5b0aae3d4ba5627a687d44cd428bfd8d7f2863fe7e069361a9ae'
 
   url 'https://tal-software.com//downloads/plugins/tal-reverb-4-installer.pkg'
-  appcast 'https://tal-software.com/products/tal-reverb-4'
   name 'TAL-Reverb-4'
   homepage 'https://tal-software.com/products/tal-reverb-4'
 

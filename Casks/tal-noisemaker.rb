@@ -3,7 +3,6 @@ cask 'tal-noisemaker' do
   sha256 '9ecae4305d4bcc38d00c8d09e2c4aebc754421373671f319f67ab11c7376d87d'
 
   url 'https://tal-software.com//downloads/plugins/tal-noisemaker-installer.pkg'
-  appcast 'https://tal-software.com/products/tal-noisemaker'
   name 'TAL-NoiseMaker'
   homepage 'https://tal-software.com/products/tal-noisemaker'
 
