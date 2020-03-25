@@ -16,8 +16,4 @@ cask 'valhallafreqecho' do
                        'com.valhalladsp.FreqEcho.pkg.dpm',
                        'com.valhalladsp.FreqEcho.pkg.vst',
                      ]
-
-  caveats do
-    reboot
-  end
 end

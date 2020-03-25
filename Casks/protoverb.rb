@@ -17,8 +17,4 @@ cask 'protoverb' do
                        'com.u-he.Protoverb.presets.pkg',
                        'com.u-he.Protoverb.vst.pkg',
                      ]
-
-  caveats do
-    reboot
-  end
 end

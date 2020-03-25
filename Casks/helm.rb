@@ -12,8 +12,4 @@ cask 'helm' do
   uninstall pkgutil: [
                        'org.tytel.helm',
                      ]
-
-  caveats do
-    reboot
-  end
 end
