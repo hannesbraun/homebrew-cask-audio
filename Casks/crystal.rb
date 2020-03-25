@@ -8,7 +8,19 @@ cask 'crystal' do
   name 'Crystal'
   homepage 'https://www.greenoak.com/crystal/dnld2.html'
 
-  pkg 'Crystal_Software.pkg'
+  pkg 'Crystal_Software.pkg',
+      choices: [
+                 {
+                   'choiceIdentifier' => 'choice0',
+                   'choiceAttribute'  => 'selected',
+                   'attributeSetting' => 1,
+                 },
+                 {
+                   'choiceIdentifier' => 'choice1',
+                   'choiceAttribute'  => 'selected',
+                   'attributeSetting' => 1,
+                 },
+               ]
 
   uninstall pkgutil: [
                        'com.greenoak.Crystal',
