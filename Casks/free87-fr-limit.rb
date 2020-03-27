@@ -5,7 +5,7 @@ cask 'free87-fr-limit' do
   url "https://www.eareckon.com/free/FRLIMIT87_#{version.no_dots}_Mac.zip"
   appcast 'https://www.eareckon.com/en/products/freebies.html',
           configuration: version.no_dots
-  name 'FR-Limit 87'
+  name 'FR-LIMIT 87'
   homepage 'https://www.eareckon.com/en/products/freebies.html'
 
   pkg "Setup_FRLIMIT87_#{version.no_dots}.pkg"
