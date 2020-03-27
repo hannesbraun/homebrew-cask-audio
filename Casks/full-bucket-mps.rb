@@ -10,8 +10,8 @@ cask 'full-bucket-mps' do
   pkg "mps_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-                       'com.fullbucket.audiounit.pkg.MPS',
-                       'com.fullbucket.vst.pkg.MPS',
+                       'de.fullbucket.audiounit.pkg.MPS',
+                       'de.fullbucket.vst.pkg.MPS',
                      ]
 
   caveats do
