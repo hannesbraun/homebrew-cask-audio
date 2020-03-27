@@ -10,8 +10,8 @@ cask 'stigma' do
   pkg "stigma_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-                       'com.fullbucket.audiounit.pkg.Stigma',
-                       'com.fullbucket.vst.pkg.Stigma',
+                       'de.fullbucket.audiounit.pkg.Stigma',
+                       'de.fullbucket.vst.pkg.Stigma',
                      ]
 
   caveats do
