@@ -10,8 +10,8 @@ cask 'monofury' do
   pkg "monofury_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-                       'com.fullbucket.audiounit.pkg.MonoFury',
-                       'com.fullbucket.vst.pkg.MonoFury',
+                       'de.fullbucket.audiounit.pkg.MonoFury',
+                       'de.fullbucket.vst.pkg.MonoFury',
                      ]
 
   caveats do
