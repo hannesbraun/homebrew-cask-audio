@@ -10,4 +10,8 @@ cask 'limiter-no6' do
 
   audio_unit_plugin 'Limiter6.component'
   vst_plugin 'Limiter6.vst'
+
+  caveats do
+    discontinued
+  end
 end

@@ -10,4 +10,8 @@ cask 'nova67p' do
 
   audio_unit_plugin 'Nova67P.component'
   vst_plugin 'Nova67P.vst'
+
+  caveats do
+    discontinued
+  end
 end

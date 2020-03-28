@@ -10,4 +10,8 @@ cask 'molot' do
 
   audio_unit_plugin 'Molot.component'
   vst_plugin 'Molot.vst'
+
+  caveats do
+    discontinued
+  end
 end
