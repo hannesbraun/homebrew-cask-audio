@@ -1,6 +1,6 @@
 cask 'stigma' do
-  version '1.2.1'
-  sha256 '7355e265661a7e28255d685b0920366909795518364b4b527c681c4176e30882'
+  version '1.2.2'
+  sha256 '41fb02b688485f48e3c5ac7bdf92bb827b47a438a5b967e09bb05f338dc6c794'
 
   url "https://www.fullbucket.de/music/dl/stigma_#{version.dots_to_underscores}_mac.pkg"
   appcast 'https://www.fullbucket.de/music/stigma.html'
