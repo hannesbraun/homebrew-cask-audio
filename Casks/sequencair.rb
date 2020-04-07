@@ -1,6 +1,6 @@
 cask 'sequencair' do
-  version '1.1.1'
-  sha256 '28b1e14b4134da1c01131c57026a07ca16edcd1183a794fe5640a3ff3e96280c'
+  version '1.1.2'
+  sha256 'b77e09aa46b65b52cdbae527e412f92035144545d4d884096f491ea39bdb2998'
 
   url "https://www.fullbucket.de/music/dl/sequencair_#{version.dots_to_underscores}_mac.pkg"
   appcast 'https://www.fullbucket.de/music/sequencair.html'
