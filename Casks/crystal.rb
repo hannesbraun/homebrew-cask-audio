@@ -1,6 +1,6 @@
 cask 'crystal' do
   version '2.5.6'
-  sha256 'b1800b9a900b4994a11cc88ff2d5dd5cddd9447a92e2c04ce38732a434709781'
+  sha256 '1ee5f86af00bdc2e754a218f3f1dbb138dd62ce5434071aa1254a1fdb52b1684'
 
   url 'https://www.greenoak.com/crystal/dl/Crystal.dmg'
   appcast 'https://www.greenoak.com/crystal/dnld2.html',
