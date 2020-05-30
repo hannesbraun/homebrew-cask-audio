@@ -1,6 +1,6 @@
 cask 'tdr-nova' do
   version '2.1.1'
-  sha256 '48bef8c7c0c2159883cb66973f26848934186a0377571d48c57d26512d569b20'
+  sha256 'fac62192acbb802fc701df1d22449b71aa19968fb557c05d17ee954d804cb09e'
 
   url "https://www.tokyodawn.net/labs/Nova/#{version}/TDR%20Nova.dmg"
   appcast 'https://www.tokyodawn.net/tdr-nova/'
