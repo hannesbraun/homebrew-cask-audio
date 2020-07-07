@@ -4,7 +4,7 @@ cask 'molot' do
 
   url "https://www.tokyodawn.net/labs/vladgsound/Molot#{version.no_dots}.dmg"
   appcast 'https://www.tokyodawn.net/vladg-molot-compressor/',
-          configuration: version.no_dots
+          must_contain: version.no_dots
   name 'VladG Molot Compressor'
   homepage 'https://www.tokyodawn.net/vladg-molot-compressor/'
 

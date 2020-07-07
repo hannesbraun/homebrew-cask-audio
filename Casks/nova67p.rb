@@ -4,7 +4,7 @@ cask 'nova67p' do
 
   url "https://www.tokyodawn.net/labs/vladgsound/Nova67P_v#{version.dots_to_underscores}-Mac.dmg"
   appcast 'https://www.tokyodawn.net/vladg-nova-67p/',
-          configuration: version.dots_to_underscores
+          must_contain: version.dots_to_underscores
   name 'VladG Nova-67P'
   homepage 'https://www.tokyodawn.net/vladg-nova-67p/'
 

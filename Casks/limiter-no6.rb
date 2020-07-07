@@ -4,7 +4,7 @@ cask 'limiter-no6' do
 
   url "https://www.tokyodawn.net/labs/vladgsound/Limiter6-v#{version.no_dots}-gui1.dmg"
   appcast 'https://www.tokyodawn.net/vladg-limiter-n6/',
-          configuration: version.no_dots
+          must_contain: version.no_dots
   name 'VladG Limiter No6'
   homepage 'https://www.tokyodawn.net/vladg-limiter-n6/'
 
