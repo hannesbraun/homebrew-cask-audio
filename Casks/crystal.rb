@@ -4,7 +4,7 @@ cask 'crystal' do
 
   url 'https://www.greenoak.com/crystal/dl/Crystal.dmg'
   appcast 'https://www.greenoak.com/crystal/dnld2.html',
-          configuration: version.major_minor
+          must_contain: version.major_minor
   name 'Crystal'
   homepage 'https://www.greenoak.com/crystal/dnld2.html'
 

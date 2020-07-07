@@ -4,7 +4,7 @@ cask 'free87-fr-gate' do
 
   url "https://www.eareckon.com/free/FRGATE87_#{version.no_dots}_Mac.zip"
   appcast 'https://www.eareckon.com/en/products/freebies.html',
-          configuration: version.no_dots
+          must_contain: version.no_dots
   name 'FR-GATE 87'
   homepage 'https://www.eareckon.com/en/products/freebies.html'
 

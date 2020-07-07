@@ -4,7 +4,7 @@ cask 'valhallafreqecho' do
 
   url "https://valhalladsp.com/wp-content/uploads/#{version.after_comma.major}/#{version.after_comma.minor}/ValhallaFreqEchoOSX_#{version.before_comma.dots_to_underscores}.zip"
   appcast 'https://valhalladsp.com/shop/delay/valhalla-freq-echo/',
-          configuration: version.before_comma.major_minor_patch
+          must_contain: version.before_comma.major_minor_patch
   name 'Valhalla Freq Echo'
   homepage 'https://valhalladsp.com/shop/delay/valhalla-freq-echo/'
 

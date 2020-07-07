@@ -4,7 +4,7 @@ cask 'free87-fr-equa' do
 
   url "https://www.eareckon.com/free/FREQUA87_#{version.no_dots}_Mac.zip"
   appcast 'https://www.eareckon.com/en/products/freebies.html',
-          configuration: version.no_dots
+          must_contain: version.no_dots
   name 'FR-EQUA 87'
   homepage 'https://www.eareckon.com/en/products/freebies.html'
 

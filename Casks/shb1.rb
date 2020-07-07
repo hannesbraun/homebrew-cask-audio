@@ -5,7 +5,7 @@ cask 'shb1' do
   # static.kvraudio.com was verified as official when first introduced to the cask
   url "https://static.kvraudio.com/files/1546/ignite_amps_shb-1_#{version.dots_to_underscores}_mac.zip"
   appcast 'https://www.kvraudio.com/product/shb-1-by-ignite-amps/',
-          configuration: version.major_minor
+          must_contain: version.major_minor
   name 'SHB-1'
   homepage 'http://www.igniteamps.com/'
 
