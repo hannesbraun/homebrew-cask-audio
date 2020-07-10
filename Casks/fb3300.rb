@@ -1,6 +1,6 @@
 cask 'fb3300' do
-  version '1.1.2'
-  sha256 '27d72c965d384bd583d1ec40cb5d082e4f29716f1a52f8212c46291e7e57c3d3'
+  version '1.1.3'
+  sha256 'ec3fe92b686ffb3cd186e16bcdbefc162912a73933ff1139a2803941bb1cd99b'
 
   url "https://www.fullbucket.de/music/dl/fb3300_#{version.dots_to_underscores}_mac.pkg"
   appcast 'https://www.fullbucket.de/music/fb3300.html'
