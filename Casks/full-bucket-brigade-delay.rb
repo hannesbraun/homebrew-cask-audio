@@ -1,6 +1,6 @@
 cask 'full-bucket-brigade-delay' do
-  version '1.2.3'
-  sha256 '4799abf03b46d4748cdf8f6b2ba34812ebdc7251357d31657ce41a6bda9b58fa'
+  version '1.2.4'
+  sha256 'f27c81043adc3b1a5500a4bfccd6f639fde7b35a8eeb0f3e9cd2d4d42d9bb9b6'
 
   url "https://www.fullbucket.de/music/dl/fbdelay_#{version.dots_to_underscores}_mac.pkg"
   appcast 'https://www.fullbucket.de/music/fbdelay.html'
