@@ -1,6 +1,6 @@
 cask 'tricent' do
-  version '1.0.6'
-  sha256 'f81249b1c32f5a4b9ae3e2bb81c2d65437e37597d93f45df3d013b01d9a0f366'
+  version '1.0.7'
+  sha256 '44edce54522de9c086bb034ce6f6827f3d23ddfeeac3df109f1a70055eec8f5a'
 
   url "https://www.fullbucket.de/music/dl/tricent_#{version.dots_to_underscores}_mac.pkg"
   appcast 'https://www.fullbucket.de/music/tricent.html'
