@@ -1,20 +1,20 @@
-cask 'sequencair' do
-  version '1.1.3'
-  sha256 'bc975c7b72e4e93fe134b04622ca18d66d3fa49e48dae44c74c49452e8c29705'
+cask "sequencair" do
+  version "1.1.3"
+  sha256 "bc975c7b72e4e93fe134b04622ca18d66d3fa49e48dae44c74c49452e8c29705"
 
   url "https://www.fullbucket.de/music/dl/sequencair_#{version.dots_to_underscores}_mac.pkg"
-  appcast 'https://www.fullbucket.de/music/sequencair.html'
-  name 'SequencAir'
-  homepage 'https://www.fullbucket.de/music/sequencair.html'
+  appcast "https://www.fullbucket.de/music/sequencair.html"
+  name "SequencAir"
+  homepage "https://www.fullbucket.de/music/sequencair.html"
 
   pkg "sequencair_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-                       'com.fullbucket.app.pkg.SequencAir',
-                       'com.fullbucket.vst.pkg.SequencAir',
-                     ]
+    "com.fullbucket.app.pkg.SequencAir",
+    "com.fullbucket.vst.pkg.SequencAir",
+  ]
 
   zap trash: [
-               '~/Library/Application Support/FullBucketMusic',
-             ]
+    "~/Library/Application Support/FullBucketMusic",
+  ]
 end
