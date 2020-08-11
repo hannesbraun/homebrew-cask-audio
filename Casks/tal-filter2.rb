@@ -1,6 +1,6 @@
 cask "tal-filter2" do
   version "2.5.1"
-  sha256 "f4c76cbf7ea07214b0e7ebce6514aa0514621977f3e3d88709409bdbf4a645ab"
+  sha256 "1c67ae99f3f25ac4eb986e1c43b27e8243d752c0ddb2b11d15af24a02f1b8b7e"
 
   url "https://tal-software.com//downloads/plugins/TAL-Filter-2-installer.pkg"
   name "TAL-Filter-2"
