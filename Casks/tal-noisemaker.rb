@@ -1,6 +1,6 @@
 cask "tal-noisemaker" do
-  version "4.5.1"
-  sha256 "9ecae4305d4bcc38d00c8d09e2c4aebc754421373671f319f67ab11c7376d87d"
+  version "4.5.3"
+  sha256 "7ed94ae7af0c74cfec972f123b9f198f6961326fe5c2e6a4e3fed7bcc6ff1053"
 
   url "https://tal-software.com//downloads/plugins/tal-noisemaker-installer.pkg"
   name "TAL-NoiseMaker"
