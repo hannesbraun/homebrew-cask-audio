@@ -1,6 +1,6 @@
 cask "qrange" do
-  version "1.1.3"
-  sha256 "5bb858cfbb9970e1c58d07a86dffe29e239b7b903843d690296f663a4d5e9687"
+  version "1.1.4"
+  sha256 "408df70e1f1a35ed1a2e8cde75ee612b5e5b18fbf054f0bf254809e894a420c2"
 
   # static.kvraudio.com was verified as official when first introduced to the cask
   url "https://static.kvraudio.com/files/1924/lkjb_qrange_mac_#{version.no_dots}.zip"
