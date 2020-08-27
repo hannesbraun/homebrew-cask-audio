@@ -11,9 +11,9 @@ cask "ob-xd" do
   pkg "OB-Xd #{version}.pkg"
 
   uninstall pkgutil: %w[
-    obxdau
-    obxdcontent
-    obxdvst3
-    obxdst
+    ob-xdau
+    ob-xdcontent
+    ob-xdvst3
+    ob-xdst
   ]
 end
