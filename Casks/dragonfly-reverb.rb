@@ -1,11 +1,12 @@
 cask "dragonfly-reverb" do
-  version "3.0.0"
-  sha256 "834a87d1dab7ce279755b1036fc59d26bbd9868063e1ff2c8f65973b058a17da"
+  version "3.2.1"
+  sha256 "d5bb6b022b80ce8fba939f4ccdb54b7b83ab5f7eca0649aff5f89ffe984a587d"
 
   # github.com/michaelwillis/dragonfly-reverb was verified as official when first introduced to the cask
   url "https://github.com/michaelwillis/dragonfly-reverb/releases/download/#{version}/DragonflyReverb-MacOS-64bit-v#{version}.zip"
   appcast "https://github.com/michaelwillis/dragonfly-reverb/releases.atom"
   name "Dragonfly Reverb"
+  desc "Set of free reverb effects"
   homepage "https://michaelwillis.github.io/dragonfly-reverb/"
 
   vst_plugin "DragonflyReverb-MacOS-64bit-v#{version}/DragonflyEarlyReflections.vst"
