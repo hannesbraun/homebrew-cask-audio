@@ -5,7 +5,7 @@ cask "fury800" do
   url "https://www.fullbucket.de/music/dl/fury800_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/fury800.html"
   name "Fury-800"
-  desc "KORG Poly-800 Simulation"
+  desc "KORG Poly-800 simulation"
   homepage "https://www.fullbucket.de/music/fury800.html"
 
   pkg "fury800_#{version.dots_to_underscores}_mac.pkg"

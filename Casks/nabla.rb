@@ -5,7 +5,7 @@ cask "nabla" do
   url "https://www.fullbucket.de/music/dl/nabla_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/nabla.html"
   name "Nabla"
-  desc "KORG Delta DL-50 Simulation"
+  desc "KORG Delta DL-50 simulation"
   homepage "https://www.fullbucket.de/music/nabla.html"
 
   pkg "nabla_#{version.dots_to_underscores}_mac.pkg"

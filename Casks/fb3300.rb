@@ -5,7 +5,7 @@ cask "fb3300" do
   url "https://www.fullbucket.de/music/dl/fb3300_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/fb3300.html"
   name "FB-3300"
-  desc "KORG PS-3300 Simulation"
+  desc "KORG PS-3300 simulation"
   homepage "https://www.fullbucket.de/music/fb3300.html"
 
   pkg "fb3300_#{version.dots_to_underscores}_mac.pkg"

@@ -5,7 +5,7 @@ cask "tricent" do
   url "https://www.fullbucket.de/music/dl/tricent_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/tricent.html"
   name "Tricent mk III"
-  desc "Polyphonic Synthesizer Ensemble"
+  desc "Polyphonic synthesizer ensemble"
   homepage "https://www.fullbucket.de/music/tricent.html"
 
   pkg "tricent_#{version.dots_to_underscores}_mac.pkg"

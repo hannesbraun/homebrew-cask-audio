@@ -5,7 +5,7 @@ cask "full-bucket-brigade-delay" do
   url "https://www.fullbucket.de/music/dl/fbdelay_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/fbdelay.html"
   name "Full Bucket Brigade Delay"
-  desc "BBD Analog Delay Simulation"
+  desc "BBD analog delay simulation"
   homepage "https://www.fullbucket.de/music/fbdelay.html"
 
   pkg "fbdelay_#{version.dots_to_underscores}_mac.pkg"

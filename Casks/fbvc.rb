@@ -5,7 +5,7 @@ cask "fbvc" do
   url "https://www.fullbucket.de/music/dl/fbvc_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/fbvc.html"
   name "Full Bucket Vocoder FBVC"
-  desc "KORG Vocoder VC-10 Simulation"
+  desc "KORG Vocoder VC-10 simulation"
   homepage "https://www.fullbucket.de/music/fbvc.html"
 
   pkg "fbvc_#{version.dots_to_underscores}_mac.pkg"

@@ -5,7 +5,7 @@ cask "deputy" do
   url "https://www.fullbucket.de/music/dl/deputy_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/deputy.html"
   name "The Deputy Mark II"
-  desc "String Synthesizer"
+  desc "String synthesizer"
   homepage "https://www.fullbucket.de/music/deputy.html"
 
   pkg "deputy_#{version.dots_to_underscores}_mac.pkg"

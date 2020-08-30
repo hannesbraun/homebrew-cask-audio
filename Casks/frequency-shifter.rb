@@ -5,7 +5,7 @@ cask "frequency-shifter" do
   url "https://www.fullbucket.de/music/dl/freqshifter_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/freqshifter.html"
   name "Frequency Shifter"
-  desc "Bode Frequency Shifter"
+  desc "Bode frequency shifter"
   homepage "https://www.fullbucket.de/music/freqshifter.html"
 
   pkg "freqshifter_#{version.dots_to_underscores}_mac.pkg"
