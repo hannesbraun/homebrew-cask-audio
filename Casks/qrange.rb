@@ -6,6 +6,7 @@ cask "qrange" do
   url "https://static.kvraudio.com/files/1924/lkjb_qrange_mac_#{version.no_dots}.zip"
   appcast "https://lkjbdsp.wordpress.com/qrange/"
   name "QRange"
+  desc "IIR linear phase EQ"
   homepage "https://lkjbdsp.wordpress.com/qrange/"
 
   audio_unit_plugin "QRange.component"
