@@ -5,6 +5,7 @@ cask "ragnarok" do
   url "https://www.fullbucket.de/music/dl/ragnarok_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/ragnarok.html"
   name "Ragnarök"
+  desc "Performance Synthesizer"
   homepage "https://www.fullbucket.de/music/ragnarok.html"
 
   pkg "ragnarok_#{version.dots_to_underscores}_mac.pkg"

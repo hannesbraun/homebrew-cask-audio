@@ -5,6 +5,7 @@ cask "sequencair" do
   url "https://www.fullbucket.de/music/dl/sequencair_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/sequencair.html"
   name "SequencAir"
+  desc "Step Sequencer/Synthesizer"
   homepage "https://www.fullbucket.de/music/sequencair.html"
 
   pkg "sequencair_#{version.dots_to_underscores}_mac.pkg"

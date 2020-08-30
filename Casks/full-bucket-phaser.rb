@@ -5,6 +5,7 @@ cask "full-bucket-phaser" do
   url "https://www.fullbucket.de/music/dl/fbphaser_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/fbphaser.html"
   name "Full Bucket Phaser"
+  desc "Analog Phaser Simulation"
   homepage "https://www.fullbucket.de/music/fbphaser.html"
 
   pkg "fbphaser_#{version.dots_to_underscores}_mac.pkg"

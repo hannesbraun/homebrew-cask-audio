@@ -5,6 +5,7 @@ cask "monofury" do
   url "https://www.fullbucket.de/music/dl/monofury_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/monofury.html"
   name "Mono/Fury"
+  desc "KORG Mono/Poly Simulation"
   homepage "https://www.fullbucket.de/music/monofury.html"
 
   pkg "monofury_#{version.dots_to_underscores}_mac.pkg"

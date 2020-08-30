@@ -5,6 +5,7 @@ cask "stigma" do
   url "https://www.fullbucket.de/music/dl/stigma_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/stigma.html"
   name "Stigma"
+  desc "KORG Sigma KP-30 Simulation"
   homepage "https://www.fullbucket.de/music/stigma.html"
 
   pkg "stigma_#{version.dots_to_underscores}_mac.pkg"

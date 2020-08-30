@@ -5,6 +5,7 @@ cask "full-bucket-mps" do
   url "https://www.fullbucket.de/music/dl/mps_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/mps.html"
   name "MPS"
+  desc "Musical Parameter Synthesizer"
   homepage "https://www.fullbucket.de/music/mps.html"
 
   pkg "mps_#{version.dots_to_underscores}_mac.pkg"
