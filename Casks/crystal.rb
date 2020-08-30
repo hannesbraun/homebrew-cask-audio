@@ -6,6 +6,7 @@ cask "crystal" do
   appcast "https://www.greenoak.com/crystal/dnld2.html",
           must_contain: version.major_minor
   name "Crystal"
+  desc "Semi-modular synthesizer"
   homepage "https://www.greenoak.com/crystal/dnld2.html"
 
   pkg "Crystal_Software.pkg",
