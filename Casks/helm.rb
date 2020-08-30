@@ -5,6 +5,7 @@ cask "helm" do
   url "https://tytel.org/static/dist/Helm_v#{version.dots_to_underscores}_r.pkg"
   appcast "https://github.com/mtytel/helm/releases.atom"
   name "Helm"
+  desc "Free and open source polyphonic synthesizer"
   homepage "https://tytel.org/helm/"
 
   pkg "Helm_v#{version.dots_to_underscores}_r.pkg"
