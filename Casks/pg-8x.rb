@@ -7,6 +7,7 @@ cask "pg-8x" do
   appcast "https://sites.google.com/site/mlvst0/pg8x-#{version.major}",
           must_contain: version.major_minor
   name "PG-8X"
+  desc "Virtual analog synthesizer"
   homepage "https://sites.google.com/site/mlvst0/pg8x-#{version.major}"
 
   vst_plugin "PG-8X.vst"
