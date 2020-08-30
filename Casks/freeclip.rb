@@ -5,6 +5,7 @@ cask "freeclip" do
   url "https://www.vennaudio.com/downloads/Free%20Clip%20#{version}.dmg"
   appcast "https://www.vennaudio.com/free-clip/"
   name "Free Clip"
+  desc "Intuitive multi algorithm soft clipper"
   homepage "https://www.vennaudio.com/free-clip/"
 
   audio_unit_plugin "FreeClip.component"
