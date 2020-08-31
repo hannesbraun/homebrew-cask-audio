@@ -5,6 +5,7 @@ cask "tdr-kotelnikov" do
   url "https://www.tokyodawn.net/labs/Kotelnikov/release#{version}/TDR%20Kotelnikov.dmg"
   appcast "https://www.tokyodawn.net/tdr-kotelnikov/"
   name "TDR Kotelnikov"
+  desc "Mastering compressor"
   homepage "https://www.tokyodawn.net/tdr-kotelnikov/"
 
   audio_unit_plugin "TDR Kotelnikov.component"
