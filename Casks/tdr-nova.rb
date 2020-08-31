@@ -1,10 +1,11 @@
 cask "tdr-nova" do
-  version "2.1.1"
-  sha256 "fac62192acbb802fc701df1d22449b71aa19968fb557c05d17ee954d804cb09e"
+  version "2.1.2"
+  sha256 "3735da3759b953c63b948e002905c901d4e1e16a28ab96f67e234cbece100de7"
 
   url "https://www.tokyodawn.net/labs/Nova/#{version}/TDR%20Nova.dmg"
   appcast "https://www.tokyodawn.net/tdr-nova/"
   name "TDR Nova"
+  desc "Parallel dynamic equalizer"
   homepage "https://www.tokyodawn.net/tdr-nova/"
 
   audio_unit_plugin "TDR Nova.component"
