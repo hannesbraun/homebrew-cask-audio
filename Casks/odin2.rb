@@ -1,6 +1,6 @@
 cask "odin2" do
-  version "2.2.2"
-  sha256 "55e01889c2a3f0a808b00ba188f7080b96ea08c09442952e89f4a1469c4dcd7c"
+  version "2.2.3"
+  sha256 "dc2e54b39eca3694da701e4a3bfa0747ea3f04f4266cbe1986d38ed228026de8"
 
   url "https://www.thewavewarden.com/assets/Odin2MacInstaller.pkg"
   name "Odin 2"
