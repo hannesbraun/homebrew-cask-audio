@@ -6,7 +6,7 @@ cask "oldskoolverb" do
   appcast "https://www.voxengo.com/product/oldskoolverb/",
           must_contain: version.no_dots
   name "Voxengo OldSkoolVerb"
-  desc "Classic reverb plugin"
+  desc "Plate reverb plugin"
   homepage "https://www.voxengo.com/product/oldskoolverb/"
 
   audio_unit_plugin "OldSkoolVerb.component"
