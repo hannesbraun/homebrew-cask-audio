@@ -5,6 +5,7 @@ cask "krush" do
   url "https://www.tritik.com/downloads/plugins/krush/Tritik_Krush_v#{version}.dmg"
   appcast "https://www.tritik.com/releaseNotes/krush/changeLog.php"
   name "Krush"
+  desc "Bitcrusher"
   homepage "https://www.tritik.com/products/krush/"
 
   pkg "Tritik_Krush_v#{version}.pkg"

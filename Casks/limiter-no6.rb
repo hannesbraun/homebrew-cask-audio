@@ -6,6 +6,7 @@ cask "limiter-no6" do
   appcast "https://www.tokyodawn.net/vladg-limiter-n6/",
           must_contain: version.no_dots
   name "VladG Limiter No6"
+  desc "Modular limiter"
   homepage "https://www.tokyodawn.net/vladg-limiter-n6/"
 
   audio_unit_plugin "Limiter6.component"
