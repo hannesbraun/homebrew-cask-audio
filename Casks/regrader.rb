@@ -8,7 +8,7 @@ cask "regrader" do
   desc "Degenerative delay processor"
   homepage "https://www.igorski.nl/download/regrader--degenerative-delay-processor"
 
-  audio_unit_plugin "Regrader/macOS/AU/regrader.component"
-  vst_plugin "Regrader/macOS/VST/regrader.vst"
-  vst3_plugin "Regrader/macOS/VST3/regrader.vst3"
+  audio_unit_plugin "macOS/AU/regrader.component"
+  vst_plugin "macOS/VST/regrader.vst"
+  vst3_plugin "macOS/VST3/regrader.vst3"
 end
