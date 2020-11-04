@@ -1,10 +1,10 @@
 cask "valhallafreqecho" do
-  version "1.0.5.1,2019.11"
-  sha256 "bcf9686d7eb9c0916f07fb94bee02fef84c7c4a892a7ccb0fd6fe0f4b338e057"
+  version "1.2.0"
+  sha256 "e56653c8510802a1e8be66a9807138f4f86527d27eb7df735e5da9e0c9e2310c"
 
-  url "https://valhalladsp.com/wp-content/uploads/#{version.after_comma.major}/#{version.after_comma.minor}/ValhallaFreqEchoOSX_#{version.before_comma.dots_to_underscores}.zip"
-  appcast "https://valhalladsp.com/shop/delay/valhalla-freq-echo/",
-          must_contain: version.before_comma.major_minor_patch
+  # valhallaproduction.s3-us-west-2.amazonaws.com was verified as official when first introduced to the cask
+  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/freqecho/ValhallaFreqEchoOSX_#{version.dots_to_underscores}.zip"
+  appcast "https://valhalladsp.com/shop/delay/valhalla-freq-echo/"
   name "Valhalla Freq Echo"
   homepage "https://valhalladsp.com/shop/delay/valhalla-freq-echo/"
 
