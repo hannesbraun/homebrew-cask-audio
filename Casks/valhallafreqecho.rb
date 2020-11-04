@@ -13,7 +13,7 @@ cask "valhallafreqecho" do
   uninstall pkgutil: [
     "com.valhalladsp.FreqEcho.pkg.aax",
     "com.valhalladsp.FreqEcho.pkg.au",
-    "com.valhalladsp.FreqEcho.pkg.dpm",
     "com.valhalladsp.FreqEcho.pkg.vst",
+    "com.valhalladsp.FreqEcho.pkg.vst3",
   ]
 end

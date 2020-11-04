@@ -15,5 +15,6 @@ cask "valhallasupermassive" do
     "com.valhalladsp.supermassive.pkg.au",
     "com.valhalladsp.supermassive.pkg.presets",
     "com.valhalladsp.supermassive.pkg.vst",
+    "com.valhalladsp.supermassive.pkg.vst3",
   ]
 end
