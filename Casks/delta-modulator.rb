@@ -1,6 +1,6 @@
 cask "delta-modulator" do
-  version "1.01"
-  sha256 "18d73159ad78c1018131c38fc4965651ec5da91ddd953d72fe899d4786502a5b"
+  version "1.06"
+  sha256 "0608ebc52f7d3b0fa5e8d59717e17c081b0f8bce05dee78af251aac793deeadd"
 
   url do
     require "open-uri"
