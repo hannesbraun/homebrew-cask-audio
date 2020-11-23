@@ -5,6 +5,7 @@ cask "xfer-ott" do
   url "https://xferrecords.com/product_downloads/24/freeware"
   appcast "https://xferrecords.com/freeware/"
   name "OTT"
+  desc "Multiband upwards/downwards compressor"
   homepage "https://xferrecords.com/freeware/"
 
   pkg "Install_Xfer_OTT.pkg"
