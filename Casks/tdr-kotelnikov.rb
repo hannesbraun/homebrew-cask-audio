@@ -1,16 +1,19 @@
 cask "tdr-kotelnikov" do
-  version "1.6.1"
-  sha256 "097e1bf8a27381e330a3f302d9ff8855aa40677919b9c7ef212a12e9bc9e5cdc"
+  version "1.6.2"
+  sha256 "07c5f75a4b5da0c1676a8861553b6e605b730c96c794aafbfdf3b348ae9aaef6"
 
-  url "https://www.tokyodawn.net/labs/Kotelnikov/release#{version}/TDR%20Kotelnikov.dmg"
+  url "https://www.tokyodawn.net/labs/Kotelnikov/#{version}/TDR%20Kotelnikov.zip"
   appcast "https://www.tokyodawn.net/tdr-kotelnikov/"
   name "TDR Kotelnikov"
   desc "Mastering compressor"
   homepage "https://www.tokyodawn.net/tdr-kotelnikov/"
 
-  audio_unit_plugin "TDR Kotelnikov.component"
-  vst_plugin "TDR Kotelnikov.vst"
-  vst3_plugin "TDR Kotelnikov.vst3"
-  artifact "TDR Kotelnikov.aaxplugin",
-           target: "/Library/Application Support/Avid/Audio/Plug-Ins/TDR Kotelnikov.aaxplugin"
+  pkg "TDR Kotelnikov.pkg"
+
+  uninstall pkgutil: [
+    "com.TokyoDawnLabs.TDRKotelnikov.AAX",
+    "com.TokyoDawnLabs.TDRKotelnikov.AU",
+    "com.TokyoDawnLabs.TDRKotelnikov.VST",
+    "com.TokyoDawnLabs.TDRKotelnikov.VST3",
+  ]
 end
