@@ -2,8 +2,8 @@ cask "valhallaspacemodulator" do
   version "1.1.6"
   sha256 "3edc3c81e75d7f4d5372cd40c7da15f74694f7a16eb9d5ac1795c49edf92c284"
 
-  # valhallaproduction.s3-us-west-2.amazonaws.com was verified as official when first introduced to the cask
-  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/spacemod/ValhallaSpaceModulatorOSXBeta_#{version.dots_to_underscores}.zip"
+  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/spacemod/ValhallaSpaceModulatorOSXBeta_#{version.dots_to_underscores}.zip",
+      verified: "valhallaproduction.s3-us-west-2.amazonaws.com/"
   appcast "https://valhalladsp.com/shop/modulation/valhalla-space-modulator/"
   name "Valhalla Space Modulator"
   homepage "https://valhalladsp.com/shop/modulation/valhalla-space-modulator/"

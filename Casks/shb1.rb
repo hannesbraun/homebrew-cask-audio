@@ -3,7 +3,8 @@ cask "shb1" do
   sha256 "3c9dfd95a585cac1f1dc83a1db6132428e46d294641dc2129fb2d6d77cbf5479"
 
   # static.kvraudio.com was verified as official when first introduced to the cask
-  url "https://static.kvraudio.com/files/1546/ignite_amps_shb-1_#{version.dots_to_underscores}_mac.zip"
+  url "https://static.kvraudio.com/files/1546/ignite_amps_shb-1_#{version.dots_to_underscores}_mac.zip",
+      verified: "static.kvraudio.com/"
   appcast "https://www.kvraudio.com/product/shb-1-by-ignite-amps/",
           must_contain: version.major_minor
   name "SHB-1"

@@ -2,8 +2,8 @@ cask "valhallasupermassive" do
   version "1.1.1"
   sha256 "ffeca951c67ab6053b1f3cf58c9b0ac05faffa6efed63c8243e4f1018fb0a6e8"
 
-  # valhallaproduction.s3-us-west-2.amazonaws.com was verified as official when first introduced to the cask
-  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSX_#{version.dots_to_underscores}.zip"
+  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSX_#{version.dots_to_underscores}.zip",
+      verified: "valhallaproduction.s3-us-west-2.amazonaws.com/"
   appcast "https://valhalladsp.com/shop/reverb/valhalla-supermassive/"
   name "Valhalla Supermassive"
   homepage "https://valhalladsp.com/shop/reverb/valhalla-supermassive/"

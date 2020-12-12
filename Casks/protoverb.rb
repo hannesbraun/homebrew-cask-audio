@@ -2,8 +2,8 @@ cask "protoverb" do
   version "1.0,4102"
   sha256 "13db2f87ec9084a5f2b03ea3a6280dfd685993892d5cd404ceccce975a1dd920"
 
-  # uhedownloads-heckmannaudiogmb.netdna-ssl.com was verified as official when first introduced to the cask
-  url "https://uhedownloads-heckmannaudiogmb.netdna-ssl.com/releases/Protoverb_#{version.before_comma.dots_to_underscores}_Mac.zip"
+  url "https://uhedownloads-heckmannaudiogmb.netdna-ssl.com/releases/Protoverb_#{version.before_comma.dots_to_underscores}_Mac.zip",
+      verified: "uhedownloads-heckmannaudiogmb.netdna-ssl.com/"
   name "Protoverb"
   homepage "https://u-he.com/products/protoverb/"
 
