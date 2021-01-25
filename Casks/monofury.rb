@@ -1,6 +1,6 @@
 cask "monofury" do
-  version "2.2.4"
-  sha256 "ca708dd5f0dabead95a34fe7cd6d871cbfcfd191d016bdb1a220f53aea74168e"
+  version "2.2.5"
+  sha256 "598a33854b73d405fb2f500b9f54fa0f0e806cf20004a4293d3409ff3dceef66"
 
   url "https://www.fullbucket.de/music/dl/monofury_#{version.dots_to_underscores}_mac.pkg"
   appcast "https://www.fullbucket.de/music/monofury.html"
