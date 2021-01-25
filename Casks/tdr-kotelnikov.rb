@@ -1,6 +1,6 @@
 cask "tdr-kotelnikov" do
-  version "1.6.2"
-  sha256 "07c5f75a4b5da0c1676a8861553b6e605b730c96c794aafbfdf3b348ae9aaef6"
+  version "1.6.3"
+  sha256 "d2d551b5c63fd66f38154e10f80c8ab36d516702404810503628a1f12dae778c"
 
   url "https://www.tokyodawn.net/labs/Kotelnikov/#{version}/TDR%20Kotelnikov.zip"
   appcast "https://www.tokyodawn.net/tdr-kotelnikov/"
