@@ -1,6 +1,6 @@
 cask "boogex" do
-  version "3.2"
-  sha256 "863c2acac5e4f0133f15c7a1ceb5378c4e885ed627b5bd6a0453de7a6587c408"
+  version "3.3"
+  sha256 "e74c1d852a64f8dd4cfcf5e04900505f6f5f4010ae4dce562717d74c60392e51"
 
   url "https://www.voxengo.com/files/VoxengoBoogex_#{version.no_dots}_Mac_AU_AAX_setup.dmg"
   appcast "https://www.voxengo.com/product/boogex/",
