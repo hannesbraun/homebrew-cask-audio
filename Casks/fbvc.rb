@@ -10,7 +10,7 @@ cask "fbvc" do
   livecheck do
     url :homepage
     strategy :page_match
-    regex(/v(\d+(?:\.\d+)*)/)
+    regex(/v(\d+(?:\.\d+){2})/)
   end
 
   pkg "fbvc_#{version.dots_to_underscores}_mac.pkg"
