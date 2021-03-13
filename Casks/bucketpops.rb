@@ -10,7 +10,7 @@ cask "bucketpops" do
   livecheck do
     url :homepage
     strategy :page_match
-    regex(/v(\d+(?:\.\d+){2})/)
+    regex(/v(\d+(?:\.\d+)*)/)
   end
 
   pkg "bucketpops_#{version.dots_to_underscores}_mac.pkg"
