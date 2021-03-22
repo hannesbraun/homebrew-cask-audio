@@ -1,5 +1,5 @@
 cask "tal-reverb2" do
-  version "2.2.3"
+  version "2.3.0"
   sha256 :no_check
 
   url "https://tal-software.com//downloads/plugins/TAL-reverb-2-installer.pkg"
