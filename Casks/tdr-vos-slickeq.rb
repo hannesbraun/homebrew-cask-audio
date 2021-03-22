@@ -3,10 +3,15 @@ cask "tdr-vos-slickeq" do
   sha256 "cd7e5238e682f163b1f6890cfe8976cf42fb8a9755421d9a7575e060e912f030"
 
   url "https://www.tokyodawn.net/labs/SlickEQ/#{version}/TDR%20VOS%20SlickEQ.zip"
-  appcast "https://www.tokyodawn.net/tdr-vos-slickeq/"
   name "TDR VOS SlickEQ"
   desc "Mixing/mastering equalizer"
   homepage "https://www.tokyodawn.net/tdr-vos-slickeq/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(%r{(\d+(?:\.\d+)*)/TDR VOS SlickEQ\.zip})
+  end
 
   pkg "TDR VOS SlickEQ.pkg"
 
