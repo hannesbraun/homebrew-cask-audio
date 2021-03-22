@@ -1,6 +1,6 @@
 cask "tal-reverb4" do
   version "2.2.7"
-  sha256 "00e1735ee7aee5a4b1881f9a4f142523178bc3558f980e7b08dd0362cdd844c2"
+  sha256 :no_check
 
   url "https://tal-software.com//downloads/plugins/tal-reverb-4-installer.pkg"
   name "TAL-Reverb-4"

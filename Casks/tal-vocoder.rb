@@ -1,6 +1,6 @@
 cask "tal-vocoder" do
   version "2.1.3"
-  sha256 "d783a4a91615ea08c5d16f6007a44314f005fd3351513f254bb3dc983f175be3"
+  sha256 :no_check
 
   url "https://tal-software.com//downloads/plugins/tal-vocoder-2-installer.pkg"
   name "TAL-Vocoder"

@@ -1,6 +1,6 @@
 cask "tal-chorus-lx" do
   version "1.4.2"
-  sha256 "a7da951aba5b8758d0862ff1b59c15fde11bcb99a25abda117bf2e38ca821aa5"
+  sha256 :no_check
 
   url "https://tal-software.com//downloads/plugins/tal-chorus-lx-installer.pkg"
   name "TAL-Chorus-LX"
