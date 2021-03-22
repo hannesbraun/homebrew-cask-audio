@@ -1,5 +1,5 @@
 cask "tal-chorus-lx" do
-  version "1.4.2"
+  version "1.5.0"
   sha256 :no_check
 
   url "https://tal-software.com//downloads/plugins/tal-chorus-lx-installer.pkg"
