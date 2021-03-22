@@ -3,10 +3,15 @@ cask "tdr-kotelnikov" do
   sha256 "d2d551b5c63fd66f38154e10f80c8ab36d516702404810503628a1f12dae778c"
 
   url "https://www.tokyodawn.net/labs/Kotelnikov/#{version}/TDR%20Kotelnikov.zip"
-  appcast "https://www.tokyodawn.net/tdr-kotelnikov/"
   name "TDR Kotelnikov"
   desc "Mastering compressor"
   homepage "https://www.tokyodawn.net/tdr-kotelnikov/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(%r{(\d+(?:\.\d+)*)/TDR Kotelnikov\.zip})
+  end
 
   pkg "TDR Kotelnikov.pkg"
 
