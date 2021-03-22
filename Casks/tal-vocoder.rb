@@ -1,5 +1,5 @@
 cask "tal-vocoder" do
-  version "2.1.3"
+  version "2.2.0"
   sha256 :no_check
 
   url "https://tal-software.com//downloads/plugins/tal-vocoder-2-installer.pkg"
