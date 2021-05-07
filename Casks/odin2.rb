@@ -1,9 +1,10 @@
 cask "odin2" do
   version "2.2.4"
-  sha256 "5b1c605ca5911353a360f3ff1b850a7964efea1d4cde442462737ace980d558a"
+  sha256 :no_check
 
   url "https://www.thewavewarden.com/assets/Odin2MacInstaller.pkg"
   name "Odin 2"
+  desc "Synthesizer plugin"
   homepage "https://www.thewavewarden.com/odin2"
 
   pkg "Odin2MacInstaller.pkg",
