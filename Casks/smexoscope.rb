@@ -1,9 +1,10 @@
 cask "smexoscope" do
   version "20161216"
-  sha256 "d2d1d1d1e15701e9ba211a5ab7aaff03506c27a8e61218a7207b2343dd1052d9"
+  sha256 :no_check
 
   url "http://armandomontanez.com/smexoscope/files/smexoscope_release.zip"
   name "s(M)exoscope"
+  desc "Oscilloscope plugin"
   homepage "http://armandomontanez.com/smexoscope/"
 
   audio_unit_plugin "smexoscope/macOS/Components/s(M)exoscope.component"
