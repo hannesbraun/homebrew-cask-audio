@@ -1,6 +1,6 @@
 cask "bucketpops" do
-  version "1.0.2"
-  sha256 "72a9bb64564818a816f07e4fddfdb631d56caa96e33c8549de02f4bcffd9ec41"
+  version "1.0.3"
+  sha256 "b56242010278117f9db9bb4314c4cea56462d443009217af6c6078379bd855b4"
 
   url "https://www.fullbucket.de/music/dl/bucketpops_#{version.dots_to_underscores}_mac.pkg"
   name "Bucket Pops"
