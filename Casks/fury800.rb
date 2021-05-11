@@ -1,6 +1,6 @@
 cask "fury800" do
-  version "2.2.0"
-  sha256 "57a533b1c3e94158cfa2793497c15d11a9b41d5fd3cdc7359034d9706246c2dd"
+  version "2.3.0"
+  sha256 "695c19424ff0106dd9b63207ed2e90cdc1cdf3a0b4af9cd0dd32c95dcbba21cf"
 
   url "https://www.fullbucket.de/music/dl/fury800_#{version.dots_to_underscores}_mac.pkg"
   name "Fury-800"
