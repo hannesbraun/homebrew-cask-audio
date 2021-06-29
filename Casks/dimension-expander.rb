@@ -2,7 +2,10 @@ cask "dimension-expander" do
   version "1.23"
   sha256 :no_check
 
-  url "https://xferrecords.com/product_downloads/32/freeware"
+  url do
+    require "open-uri"
+    URI("https://xferrecords.com/product_downloads/32/freeware").open.base_uri.to_s
+  end
   appcast "https://xferrecords.com/freeware/"
   name "Dimension Expander"
   desc "Chorus/Spatial Expander"
