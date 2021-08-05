@@ -1,5 +1,5 @@
 cask "tal-noisemaker" do
-  version "4.6.2"
+  version "5.0.4"
   sha256 :no_check
 
   url "https://tal-software.com//downloads/plugins/tal-noisemaker-installer.pkg"
