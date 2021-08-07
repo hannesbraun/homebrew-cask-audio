@@ -14,4 +14,8 @@ cask "tal-filter" do
     "com.talsoftware.pkg.TAL-Filter-VST",
     "com.talsoftware.pkg.TAL-Filter-AU",
   ]
+
+  caveats do
+    discontinued
+  end
 end
