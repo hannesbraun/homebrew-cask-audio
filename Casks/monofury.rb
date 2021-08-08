@@ -1,6 +1,6 @@
 cask "monofury" do
-  version "2.2.5"
-  sha256 "598a33854b73d405fb2f500b9f54fa0f0e806cf20004a4293d3409ff3dceef66"
+  version "2.2.6"
+  sha256 "fc2c0e0fa368dca101beeba5285d56b21a083a9bbc6a082108dd1a21cdb64c0d"
 
   url "https://www.fullbucket.de/music/dl/monofury_#{version.dots_to_underscores}_mac.pkg"
   name "Mono/Fury"
