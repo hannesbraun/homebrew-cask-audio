@@ -1,13 +1,17 @@
 cask "ob-xd" do
-  version "2.1"
-  sha256 "9532bf356afd25ffdcd549b9adab2c8df988a27180ae52f0696854b833a22ad7"
+  version "2.4"
+  sha256 "9d65e1eb1a695475200cb1431589b9508b8ca5db9a2cb6ae2f025cb37a389dda"
 
   url "https://www.discodsp.net/download/Obxd#{version.no_dots}Mac.zip",
       verified: "discodsp.net/"
-  appcast "https://github.com/reales/OB-Xd/releases.atom"
   name "OB-Xd"
   desc "Virtual analog synthesizer"
   homepage "https://www.discodsp.com/obxd/"
+
+  livecheck do
+    strategy :git
+    url "https://github.com/reales/OB-Xd/"
+  end
 
   pkg "OB-Xd #{version}.pkg"
 
