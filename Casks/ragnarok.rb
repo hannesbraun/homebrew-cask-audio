@@ -19,8 +19,4 @@ cask "ragnarok" do
     "com.fullbucket.audiounit.pkg.Ragnarok",
     "com.fullbucket.vst.pkg.Ragnarok",
   ]
-
-  caveats do
-    reboot
-  end
 end

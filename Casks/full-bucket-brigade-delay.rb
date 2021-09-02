@@ -19,8 +19,4 @@ cask "full-bucket-brigade-delay" do
     "com.fullbucket.audiounit.pkg.FBDelay",
     "com.fullbucket.vst.pkg.FBDelay",
   ]
-
-  caveats do
-    reboot
-  end
 end

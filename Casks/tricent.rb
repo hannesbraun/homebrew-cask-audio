@@ -19,8 +19,4 @@ cask "tricent" do
     "com.fullbucket.audiounit.pkg.Tricent",
     "com.fullbucket.vst.pkg.Tricent",
   ]
-
-  caveats do
-    reboot
-  end
 end

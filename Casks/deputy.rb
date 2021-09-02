@@ -19,8 +19,4 @@ cask "deputy" do
     "com.fullbucket.audiounit.pkg.Deputy",
     "com.fullbucket.vst.pkg.Deputy",
   ]
-
-  caveats do
-    reboot
-  end
 end

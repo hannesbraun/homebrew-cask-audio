@@ -20,8 +20,4 @@ cask "fbvc" do
     "com.fullbucket.vst.pkg.FBVC",
     "com.fullbucket.wav.pkg.FBVC",
   ]
-
-  caveats do
-    reboot
-  end
 end

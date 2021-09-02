@@ -19,8 +19,4 @@ cask "full-bucket-phaser" do
     "com.fullbucket.audiounit.pkg.FBPhaser",
     "com.fullbucket.vst.pkg.FBPhaser",
   ]
-
-  caveats do
-    reboot
-  end
 end

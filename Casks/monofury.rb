@@ -19,8 +19,4 @@ cask "monofury" do
     "de.fullbucket.audiounit.pkg.MonoFury",
     "de.fullbucket.vst.pkg.MonoFury",
   ]
-
-  caveats do
-    reboot
-  end
 end

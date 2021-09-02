@@ -19,8 +19,4 @@ cask "full-bucket-mps" do
     "de.fullbucket.audiounit.pkg.MPS",
     "de.fullbucket.vst.pkg.MPS",
   ]
-
-  caveats do
-    reboot
-  end
 end

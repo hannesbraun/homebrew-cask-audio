@@ -19,8 +19,4 @@ cask "fb3300" do
     "de.fullbucket.audiounit.pkg.FB3300",
     "de.fullbucket.vst.pkg.FB3300",
   ]
-
-  caveats do
-    reboot
-  end
 end

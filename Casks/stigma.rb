@@ -19,8 +19,4 @@ cask "stigma" do
     "de.fullbucket.audiounit.pkg.Stigma",
     "de.fullbucket.vst.pkg.Stigma",
   ]
-
-  caveats do
-    reboot
-  end
 end

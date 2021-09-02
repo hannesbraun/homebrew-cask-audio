@@ -19,8 +19,4 @@ cask "nabla" do
     "com.fullbucket.audiounit.pkg.Nabla",
     "com.fullbucket.vst.pkg.Nabla",
   ]
-
-  caveats do
-    reboot
-  end
 end

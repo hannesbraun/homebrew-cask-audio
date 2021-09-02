@@ -19,8 +19,4 @@ cask "frequency-shifter" do
     "com.fullbucket.audiounit.pkg.FreqShifter",
     "com.fullbucket.vst.pkg.FreqShifter",
   ]
-
-  caveats do
-    reboot
-  end
 end
