@@ -19,8 +19,12 @@ cask "bucketpops" do
     regex(/v(\d+(?:\.\d+)*)/)
   end
 
-  pkg "bucketpops_#{version.dots_to_underscores}_mac.pkg"
-
+  if MacOS.version <= :mojave
+    pkg "bucketpops_#{version.dots_to_underscores}_mac.pkg"
+  else
+    pkg "bucketpops_#{version.dots_to_underscores}_METAL_mac.pkg"
+  end
+  
   uninstall pkgutil: [
     "de.fullbucket.audiounit.pkg.BucketPops",
     "de.fullbucket.vst.pkg.BucketPops",
