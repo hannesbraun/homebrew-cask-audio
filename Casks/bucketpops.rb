@@ -24,7 +24,7 @@ cask "bucketpops" do
   else
     pkg "bucketpops_#{version.dots_to_underscores}_METAL_mac.pkg"
   end
-  
+
   uninstall pkgutil: [
     "de.fullbucket.audiounit.pkg.BucketPops",
     "de.fullbucket.vst.pkg.BucketPops",
