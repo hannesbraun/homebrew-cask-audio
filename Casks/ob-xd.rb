@@ -1,8 +1,8 @@
 cask "ob-xd" do
-  version "2.4"
-  sha256 "9d65e1eb1a695475200cb1431589b9508b8ca5db9a2cb6ae2f025cb37a389dda"
+  version "2.5.1"
+  sha256 "4d166901569aaccae8fc5c9f98901007aeffa40af9b15d9a844fb0ae33983c7b"
 
-  url "https://www.discodsp.net/download/Obxd#{version.no_dots}Mac.zip",
+  url "https://www.discodsp.net/download/Obxd#{version.major_minor.no_dots}Mac.zip",
       verified: "discodsp.net/"
   name "OB-Xd"
   desc "Virtual analog synthesizer"
@@ -13,7 +13,7 @@ cask "ob-xd" do
     url "https://github.com/reales/OB-Xd/"
   end
 
-  pkg "OB-Xd #{version}.pkg"
+  pkg "OB-Xd #{version.major_minor}.pkg"
 
   uninstall pkgutil: %w[
     ob-xdau
