@@ -1,6 +1,6 @@
 cask "dragonfly-reverb" do
-  version "3.2.3"
-  sha256 "9b5698b0cb7a86cfd6c7431e4fd425a46a11beabf1386bb8946a5324592f07f0"
+  version "3.2.5"
+  sha256 "56175dc6330c30ac4a776e2adf1821a8a42bdf228aae5a120335197892686591"
 
   url "https://github.com/michaelwillis/dragonfly-reverb/releases/download/#{version}/DragonflyReverb-MacOS-64bit-v#{version}.zip",
       verified: "github.com/michaelwillis/dragonfly-reverb/"
