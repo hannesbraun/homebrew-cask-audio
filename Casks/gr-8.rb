@@ -1,6 +1,6 @@
 cask "gr-8" do
-  version "1.1.1,2021-09-25"
-  sha256 "4b68f4552e80a386d6bf6c71317aef999a21ff1741d81b30a74e6ce160f9e46c"
+  version "1.2.0,2021-10-08"
+  sha256 "91d9c1595cf7a4f5b235ecf504e55a3151c843a3f3cef79a7adb11032c6f4675"
 
   url "https://static.kvraudio.com/files/1574/gr-8-au-#{version.after_comma}.zip",
       verified: "static.kvraudio.com/"
