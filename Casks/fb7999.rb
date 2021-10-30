@@ -20,9 +20,9 @@ cask "fb7999" do
   end
 
   if MacOS.version <= :mojave
-    pkg "fb3300_#{version.dots_to_underscores}_N_mac.pkg"
+    pkg "fb7999_#{version.dots_to_underscores}_N_mac.pkg"
   else
-    pkg "fb3300_#{version.dots_to_underscores}_METAL_mac.pkg"
+    pkg "fb7999_#{version.dots_to_underscores}_METAL_mac.pkg"
   end
 
   uninstall pkgutil: [
