@@ -1,14 +1,14 @@
 cask "valhallasupermassive" do
-  version "1.2.2"
-  sha256 "37b962a36f2a0d2486fa3d893383bb28d7b4d94f6793ddfeff09cf772e8bd01c"
+  version "1.5.0"
+  sha256 "90ec407a01aa59a47d22c0236521cafe4e01ba75f78b389c94461f943bf5d124"
 
-  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSXBeta_#{version.dots_to_underscores}.zip",
+  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSX_#{version.dots_to_underscores}v2.zip",
       verified: "valhallaproduction.s3-us-west-2.amazonaws.com/"
   appcast "https://valhalladsp.com/shop/reverb/valhalla-supermassive/"
   name "Valhalla Supermassive"
   homepage "https://valhalladsp.com/shop/reverb/valhalla-supermassive/"
 
-  pkg "ValhallaSupermassiveOSXBeta.pkg"
+  pkg "ValhallaSupermassiveOSX.pkg"
 
   uninstall pkgutil: [
     "com.valhalladsp.supermassive.pkg.aax",
