@@ -1,12 +1,12 @@
 cask "whispair" do
-  version "1.0.4"
+  version "1.1.0"
 
   if MacOS.version <= :mojave
-    sha256 "i4109cfb567bfcec0d428e88bc98df7008651129fc5c49183129fe85d5f7bcbec"
-    url "https://www.fullbucket.de/music/dl/whispair_#{version.dots_to_underscores}_mac.pkg"
+    sha256 "790bf982dfffc2f40268bb72fabeb12a8a4550b8d57de2b13656ab502470df1d"
+    url "https://www.fullbucket.de/music/dl/whispair_#{version.dots_to_underscores}_N_mac.pkg"
   else
-    sha256 "65acf105074bceea019683821eb6a2ee2237fefcb530ee8815988211ee2958c3"
-    url "https://www.fullbucket.de/music/dl/whispair_#{version.dots_to_underscores}_METAL_mac.pkg"
+    sha256 "3398bdd478a68f3c7cb24a8f79cdc6ef68ebbc9eeae531ad47c56bdd61ba2762"
+    url "https://www.fullbucket.de/music/dl/whispair_#{version.dots_to_underscores}_mac.pkg"
   end
 
   name "WhispAir"
@@ -20,13 +20,21 @@ cask "whispair" do
   end
 
   if MacOS.version <= :mojave
-    pkg "whispair_#{version.dots_to_underscores}_mac.pkg"
+    pkg "whispair_#{version.dots_to_underscores}_N_mac.pkg"
   else
-    pkg "whispair_#{version.dots_to_underscores}_METAL_mac.pkg"
+    pkg "whispair_#{version.dots_to_underscores}_mac.pkg"
   end
 
-  uninstall pkgutil: [
-    "de.fullbucket.audiounit.pkg.WhispAir",
-    "de.fullbucket.vst.pkg.WhispAir",
-  ]
+  if MacOS.version <= :mojave
+    uninstall pkgutil: [
+      "de.fullbucket.audiounit.pkg.WhispAir",
+      "de.fullbucket.vst.pkg.WhispAir",
+      "de.fullbucket.vst3.pkg.WhispAir",
+    ]
+  else
+    uninstall pkgutil: [
+      "com.fullbucket.audiounit.pkg.WhispAir",
+      "com.fullbucket.vst.pkg.WhispAir",
+    ]
+  end
 end
