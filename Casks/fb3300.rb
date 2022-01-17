@@ -1,12 +1,12 @@
 cask "fb3300" do
-  version "1.1.6"
+  version "1.2.0"
 
   if MacOS.version <= :mojave
-    sha256 "590ce6297b316f84e48b97ac7fc1746f24aa38eb5d868d39038d823795328a20"
-    url "https://www.fullbucket.de/music/dl/fb3300_#{version.dots_to_underscores}_mac.pkg"
+    sha256 "0e1fe376647ab1aebf7d961843027f3e84c76b736263210eb4e720990f21a305"
+    url "https://www.fullbucket.de/music/dl/fb3300_#{version.dots_to_underscores}_N_mac.pkg"
   else
-    sha256 "1136f00e5a0c2eeae075b3603f76222cef0ec0e6eb6e22c7e2a31fdbb349faa5"
-    url "https://www.fullbucket.de/music/dl/fb3300_#{version.dots_to_underscores}_METAL_mac.pkg"
+    sha256 "03a65e98f36e46c63247d882efbf58bf4b829ec99f13abfe15541ea68644e8ae"
+    url "https://www.fullbucket.de/music/dl/fb3300_#{version.dots_to_underscores}_mac.pkg"
   end
 
   name "FB-3300"
@@ -20,13 +20,19 @@ cask "fb3300" do
   end
 
   if MacOS.version <= :mojave
-    pkg "fb3300_#{version.dots_to_underscores}_mac.pkg"
-  else
-    pkg "fb3300_#{version.dots_to_underscores}_METAL_mac.pkg"
-  end
+    pkg "fb3300_#{version.dots_to_underscores}_N_mac.pkg"
 
-  uninstall pkgutil: [
-    "de.fullbucket.audiounit.pkg.FB3300",
-    "de.fullbucket.vst.pkg.FB3300",
-  ]
+    uninstall pkgutil: [
+      "com.fullbucket.audiounit.pkg.FB3300",
+      "com.fullbucket.vst.pkg.FB3300",
+    ]
+  else
+    pkg "fb3300_#{version.dots_to_underscores}_mac.pkg"
+
+    uninstall pkgutil: [
+      "de.fullbucket.audiounit.pkg.FB3300",
+      "de.fullbucket.vst.pkg.FB3300",
+      "de.fullbucket.vst3.pkg.FB3300",
+    ]
+  end
 end
