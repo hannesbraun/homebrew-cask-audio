@@ -23,16 +23,16 @@ cask "whispair" do
     pkg "whispair_#{version.dots_to_underscores}_N_mac.pkg"
 
     uninstall pkgutil: [
-      "de.fullbucket.audiounit.pkg.WhispAir",
-      "de.fullbucket.vst.pkg.WhispAir",
-      "de.fullbucket.vst3.pkg.WhispAir",
+      "com.fullbucket.audiounit.pkg.WhispAir",
+      "com.fullbucket.vst.pkg.WhispAir",
     ]
   else
     pkg "whispair_#{version.dots_to_underscores}_mac.pkg"
 
     uninstall pkgutil: [
-      "com.fullbucket.audiounit.pkg.WhispAir",
-      "com.fullbucket.vst.pkg.WhispAir",
+      "de.fullbucket.audiounit.pkg.WhispAir",
+      "de.fullbucket.vst.pkg.WhispAir",
+      "de.fullbucket.vst3.pkg.WhispAir",
     ]
   end
 end
