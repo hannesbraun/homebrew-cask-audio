@@ -2,7 +2,7 @@ cask "regrader" do
   version "1.0.4,b195b368ca4cda2be291c65bd177eab7"
   sha256 "8be335234a06151d4ce797fa960d68c7435f52cd7c82e9e02e4b79192fa6a85b"
 
-  url "https://www.igorski.nl/download/retrieve/#{version.after_comma}"
+  url "https://www.igorski.nl/download/retrieve/#{version.csv.second}"
   appcast "https://www.igorski.nl/download/regrader--degenerative-delay-processor"
   name "Regrader"
   desc "Degenerative delay processor"
