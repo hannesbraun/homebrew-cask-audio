@@ -1,12 +1,12 @@
 cask "fb7999" do
-  version "1.0.2"
+  version "1.1.0"
 
   if MacOS.version <= :mojave
-    sha256 "e60eb6855c5b27ee47b8684bec113f92cdc0ba431ea727dcbf735ed29ac5be5b"
+    sha256 "814601d3e76e98dd3ef203a9c26ca3655b58c50e86d3fba55f8acabb1d82d543"
     url "https://www.fullbucket.de/music/dl/fb7999_#{version.dots_to_underscores}_N_mac.pkg"
   else
-    sha256 "ee7c1d99002df4e6ffed6b8e85f67502ced59f3b11027b82a6a7b020c05335be"
-    url "https://www.fullbucket.de/music/dl/fb7999_#{version.dots_to_underscores}_METAL_mac.pkg"
+    sha256 "70e66fa0901e989cafa74a0ad53f72db58d79c37c7d9af839ed81ddde2ddabc0"
+    url "https://www.fullbucket.de/music/dl/fb7999_#{version.dots_to_underscores}_mac.pkg"
   end
 
   name "FB-7999"
@@ -21,12 +21,18 @@ cask "fb7999" do
 
   if MacOS.version <= :mojave
     pkg "fb7999_#{version.dots_to_underscores}_N_mac.pkg"
-  else
-    pkg "fb7999_#{version.dots_to_underscores}_METAL_mac.pkg"
-  end
 
-  uninstall pkgutil: [
-    "de.fullbucket.audiounit.pkg.FB7999",
-    "de.fullbucket.vst.pkg.FB7999",
-  ]
+    uninstall pkgutil: [
+      "com.fullbucket.audiounit.pkg.FB7999",
+      "com.fullbucket.vst.pkg.FB7999",
+    ]
+  else
+    pkg "fb7999_#{version.dots_to_underscores}_mac.pkg"
+
+    uninstall pkgutil: [
+      "de.fullbucket.audiounit.pkg.FB7999",
+      "de.fullbucket.vst.pkg.FB7999",
+      "de.fullbucket.vst3.pkg.FB7999",
+    ]
+  end
 end
