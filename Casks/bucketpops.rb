@@ -1,12 +1,12 @@
 cask "bucketpops" do
-  version "1.0.4"
+  version "1.1.0"
 
   if MacOS.version <= :mojave
-    sha256 "bdbb0d1500721fcd87edd7e87cec26d9efe0467b5491e5e37beac4ebfc8d3f4a"
-    url "https://www.fullbucket.de/music/dl/bucketpops_#{version.dots_to_underscores}_mac.pkg"
+    sha256 "ca1b52a3b48d00c7605ccae2f9fd4fdd6afbfc26625d111b59c257f93858697e"
+    url "https://www.fullbucket.de/music/dl/bucketpops_#{version.dots_to_underscores}_N_mac.pkg"
   else
-    sha256 "18b65fc2c6c3bd9eff8300db7568eb4574077b3006e8ff35b86f5790bfe4c9d9"
-    url "https://www.fullbucket.de/music/dl/bucketpops_#{version.dots_to_underscores}_METAL_mac.pkg"
+    sha256 "f20b64a433bf2dd94fe90e91ecc00d2f7e50557b57bcf1bbb7985c2cd7ae1344"
+    url "https://www.fullbucket.de/music/dl/bucketpops_#{version.dots_to_underscores}_mac.pkg"
   end
 
   name "Bucket Pops"
@@ -20,13 +20,19 @@ cask "bucketpops" do
   end
 
   if MacOS.version <= :mojave
-    pkg "bucketpops_#{version.dots_to_underscores}_mac.pkg"
-  else
-    pkg "bucketpops_#{version.dots_to_underscores}_METAL_mac.pkg"
-  end
+    pkg "bucketpops_#{version.dots_to_underscores}_N_mac.pkg"
 
-  uninstall pkgutil: [
-    "de.fullbucket.audiounit.pkg.BucketPops",
-    "de.fullbucket.vst.pkg.BucketPops",
-  ]
+    uninstall pkgutil: [
+      "com.fullbucket.audiounit.pkg.BucketPops",
+      "com.fullbucket.vst.pkg.BucketPops",
+    ]
+  else
+    pkg "bucketpops_#{version.dots_to_underscores}_mac.pkg"
+
+    uninstall pkgutil: [
+      "de.fullbucket.audiounit.pkg.BucketPops",
+      "de.fullbucket.vst.pkg.BucketPops",
+      "de.fullbucket.vst3.pkg.BucketPops",
+    ]
+  end
 end
