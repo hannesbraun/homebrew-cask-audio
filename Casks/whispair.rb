@@ -1,11 +1,11 @@
 cask "whispair" do
-  version "1.1.0"
+  version "1.1.1"
 
   if MacOS.version <= :mojave
-    sha256 "790bf982dfffc2f40268bb72fabeb12a8a4550b8d57de2b13656ab502470df1d"
+    sha256 "86ee4f3b6423d30284f318a944efdce9aad493eebea442abe778f4902ae2147f"
     url "https://www.fullbucket.de/music/dl/whispair_#{version.dots_to_underscores}_N_mac.pkg"
   else
-    sha256 "3398bdd478a68f3c7cb24a8f79cdc6ef68ebbc9eeae531ad47c56bdd61ba2762"
+    sha256 "1566de2749703d1fd12feddfb3d73e70017b309e944dddcd590bb6ecc961b454"
     url "https://www.fullbucket.de/music/dl/whispair_#{version.dots_to_underscores}_mac.pkg"
   end
 
