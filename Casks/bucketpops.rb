@@ -1,11 +1,11 @@
 cask "bucketpops" do
-  version "1.1.0"
+  version "1.1.1"
 
   if MacOS.version <= :mojave
-    sha256 "ca1b52a3b48d00c7605ccae2f9fd4fdd6afbfc26625d111b59c257f93858697e"
+    sha256 "35215957aeff6cacf1ed81b742ac5450f894b6bfa16c753cf0b4124c28689c74"
     url "https://www.fullbucket.de/music/dl/bucketpops_#{version.dots_to_underscores}_N_mac.pkg"
   else
-    sha256 "f20b64a433bf2dd94fe90e91ecc00d2f7e50557b57bcf1bbb7985c2cd7ae1344"
+    sha256 "d00e0e04641531e5b5a04dbd1080db54ff5e642f2c396980345b50231503d85f"
     url "https://www.fullbucket.de/music/dl/bucketpops_#{version.dots_to_underscores}_mac.pkg"
   end
 
