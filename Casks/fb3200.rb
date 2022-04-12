@@ -1,6 +1,6 @@
 cask "fb3200" do
-  version "1.0.4"
-  sha256 "0f307ce02af4eb009661de169224e8fe5a9fbac1a81b2cb76c99c86859a7243f"
+  version "1.1.0"
+  sha256 "24d2295b5364af4dc727447c1754fba9f90b7beea3307774e2063542f5eef5fa"
 
   url "https://www.fullbucket.de/music/dl/fb3200_#{version.dots_to_underscores}_mac.pkg"
   name "FB-3200"
@@ -16,7 +16,8 @@ cask "fb3200" do
   pkg "fb3200_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.FB3200",
-    "com.fullbucket.vst.pkg.FB3200",
+    "de.fullbucket.audiounit.pkg.FB3200",
+    "de.fullbucket.vst.pkg.FB3200",
+    "de.fullbucket.vst3.pkg.FB3200",
   ]
 end
