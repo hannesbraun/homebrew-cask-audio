@@ -1,6 +1,6 @@
 cask "tricent" do
-  version "1.0.7"
-  sha256 "44edce54522de9c086bb034ce6f6827f3d23ddfeeac3df109f1a70055eec8f5a"
+  version "1.1.1"
+  sha256 "4f900292fd58a23436bbcfadd66cad7caaa2b6b8554466e0c94ec84cce24f56e"
 
   url "https://www.fullbucket.de/music/dl/tricent_#{version.dots_to_underscores}_mac.pkg"
   name "Tricent mk III"
@@ -16,7 +16,8 @@ cask "tricent" do
   pkg "tricent_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.Tricent",
-    "com.fullbucket.vst.pkg.Tricent",
+    "de.fullbucket.audiounit.pkg.Tricent",
+    "de.fullbucket.vst.pkg.Tricent",
+    "de.fullbucket.vst3.pkg.Tricent",
   ]
 end
