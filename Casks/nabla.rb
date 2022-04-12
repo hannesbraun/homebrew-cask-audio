@@ -1,6 +1,6 @@
 cask "nabla" do
-  version "1.2.5"
-  sha256 "ffe514f77899577b3a36b73e5120e2a6a907c8ea18342c5c80257339f2a5fd98"
+  version "1.3.0"
+  sha256 "f86dc51c031758ac5f1f2d7385eba0041a3a339aaf45e21cde75af524799f1ac"
 
   url "https://www.fullbucket.de/music/dl/nabla_#{version.dots_to_underscores}_mac.pkg"
   name "Nabla"
@@ -16,7 +16,8 @@ cask "nabla" do
   pkg "nabla_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.Nabla",
-    "com.fullbucket.vst.pkg.Nabla",
+    "de.fullbucket.audiounit.pkg.Nabla",
+    "de.fullbucket.vst.pkg.Nabla",
+    "de.fullbucket.vst3.pkg.Nabla",
   ]
 end
