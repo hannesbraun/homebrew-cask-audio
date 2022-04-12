@@ -1,11 +1,11 @@
 cask "fb3300" do
-  version "1.2.0"
-
   if MacOS.version <= :mojave
+    version "1.2.0"
     sha256 "0e1fe376647ab1aebf7d961843027f3e84c76b736263210eb4e720990f21a305"
     url "https://www.fullbucket.de/music/dl/fb3300_#{version.dots_to_underscores}_N_mac.pkg"
   else
-    sha256 "03a65e98f36e46c63247d882efbf58bf4b829ec99f13abfe15541ea68644e8ae"
+    version "1.2.1"
+    sha256 "75ae81d27f1671ac5b23624573c2c0006d0c0d47bb61784bc26705c543c9fbfb"
     url "https://www.fullbucket.de/music/dl/fb3300_#{version.dots_to_underscores}_mac.pkg"
   end
 
