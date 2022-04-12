@@ -1,14 +1,8 @@
 cask "monofury" do
-  version "2.2.6"
+  version "2.3.0"
+  sha256 "e3c4ae666fc8fefa96d69abc41eb532c5fa92f2359edb80997c485ec00278475"
 
-  if MacOS.version <= :mojave
-    sha256 "fc2c0e0fa368dca101beeba5285d56b21a083a9bbc6a082108dd1a21cdb64c0d"
-    url "https://www.fullbucket.de/music/dl/monofury_#{version.dots_to_underscores}_mac.pkg"
-  else
-    sha256 "33cf66d72ad3f5fc4080d41f467c46f0f962113cf430b539efd7b7a9127a832a"
-    url "https://www.fullbucket.de/music/dl/monofury_#{version.dots_to_underscores}_METAL_mac.pkg"
-  end
-
+  url "https://www.fullbucket.de/music/dl/monofury_#{version.dots_to_underscores}_mac.pkg"
   name "Mono/Fury"
   desc "KORG Mono/Poly simulation"
   homepage "https://www.fullbucket.de/music/monofury.html"
@@ -19,14 +13,11 @@ cask "monofury" do
     regex(/v(\d+(?:\.\d+)*)/)
   end
 
-  if MacOS.version <= :mojave
-    pkg "monofury_#{version.dots_to_underscores}_mac.pkg"
-  else
-    pkg "monofury_#{version.dots_to_underscores}_METAL_mac.pkg"
-  end
+  pkg "monofury_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
     "de.fullbucket.audiounit.pkg.MonoFury",
     "de.fullbucket.vst.pkg.MonoFury",
+    "de.fullbucket.vst3.pkg.MonoFury",
   ]
 end
