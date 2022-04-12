@@ -1,11 +1,11 @@
 cask "fb7999" do
-  version "1.1.0"
+  version "1.1.1"
 
   if MacOS.version <= :mojave
-    sha256 "814601d3e76e98dd3ef203a9c26ca3655b58c50e86d3fba55f8acabb1d82d543"
+    sha256 "6955338793d12b9b3da368bd442279e4817f59e7bac1ad908b6e20833fa2ec1b"
     url "https://www.fullbucket.de/music/dl/fb7999_#{version.dots_to_underscores}_N_mac.pkg"
   else
-    sha256 "70e66fa0901e989cafa74a0ad53f72db58d79c37c7d9af839ed81ddde2ddabc0"
+    sha256 "30870ab76c5d69c6aa049ff51238509118ffc5d6453a8faec19473bd1c0771ee"
     url "https://www.fullbucket.de/music/dl/fb7999_#{version.dots_to_underscores}_mac.pkg"
   end
 
