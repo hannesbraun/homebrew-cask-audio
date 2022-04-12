@@ -1,6 +1,6 @@
 cask "fbvc" do
-  version "1.0.2"
-  sha256 "5349c8c3b155136161b174d7f99d8f1f1fbe639ef1dfc31e3536c1c11fc21c1b"
+  version "1.1.0"
+  sha256 "c793bf357aefa3a74e2afcb36220673ef47810d75c6c7a0477d53946599b9679"
 
   url "https://www.fullbucket.de/music/dl/fbvc_#{version.dots_to_underscores}_mac.pkg"
   name "Full Bucket Vocoder FBVC"
@@ -16,8 +16,9 @@ cask "fbvc" do
   pkg "fbvc_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.FBVC",
-    "com.fullbucket.vst.pkg.FBVC",
-    "com.fullbucket.wav.pkg.FBVC",
+    "de.fullbucket.audiounit.pkg.FBVC",
+    "de.fullbucket.vst.pkg.FBVC",
+    "de.fullbucket.vst3.pkg.FBVC",
+    "de.fullbucket.wav.pkg.FBVC",
   ]
 end
