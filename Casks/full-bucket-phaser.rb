@@ -1,6 +1,6 @@
 cask "full-bucket-phaser" do
-  version "1.0.0"
-  sha256 "192eedf07ed559b9ef48deda479b8a37b30c42109b41e4da2d853cd004ef1d3b"
+  version "2.0.0"
+  sha256 "66e365205897451f5e6b89fabeb1a98eebb0092201f61a90d4e3c6100e6e8196"
 
   url "https://www.fullbucket.de/music/dl/fbphaser_#{version.dots_to_underscores}_mac.pkg"
   name "Full Bucket Phaser"
@@ -16,7 +16,8 @@ cask "full-bucket-phaser" do
   pkg "fbphaser_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.FBPhaser",
-    "com.fullbucket.vst.pkg.FBPhaser",
+    "de.fullbucket.audiounit.pkg.FBPhaser",
+    "de.fullbucket.vst.pkg.FBPhaser",
+    "de.fullbucket.vst3.pkg.FBPhaser",
   ]
 end
