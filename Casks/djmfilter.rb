@@ -1,5 +1,5 @@
 cask "djmfilter" do
-  version "1.11"
+  version "1.23"
   sha256 :no_check
 
   url "https://xferrecords.com/product_downloads/68/freeware"
