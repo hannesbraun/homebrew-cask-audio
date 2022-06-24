@@ -1,6 +1,6 @@
 cask "blooo" do
-  version "2.1.6"
-  sha256 "e795e71ac0d33f9c4dfa5d96a113ddc5376a88ddab598751cd625003578c5fbd"
+  version "2.2.0"
+  sha256 "899b818f061ef18c91349e65bdcc352e47dd3e1c2bbbab3ad5ac0306262fee86"
 
   url "https://www.fullbucket.de/music/dl/blooo_#{version.dots_to_underscores}_mac.pkg"
   name "the blooo"
@@ -16,7 +16,8 @@ cask "blooo" do
   pkg "blooo_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.Blooo",
-    "com.fullbucket.vst.pkg.Blooo",
+    "de.fullbucket.audiounit.pkg.Blooo",
+    "de.fullbucket.vst.pkg.Blooo",
+    "de.fullbucket.vst3.pkg.Blooo",
   ]
 end
