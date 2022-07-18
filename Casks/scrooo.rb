@@ -1,6 +1,6 @@
 cask "scrooo" do
-  version "1.3.0"
-  sha256 "dbd99b4a8f6f7d9701d01f18d4e29bc5597a1686de6a82070b5f68162d25e3ec"
+  version "2.0.0"
+  sha256 "342bfddc92d1720afe3a5f2260484a100400d623fcaa204daa975517df82852a"
 
   url "https://www.fullbucket.de/music/dl/scrooo_#{version.dots_to_underscores}_mac.pkg"
   name "the scrooo"
@@ -16,7 +16,8 @@ cask "scrooo" do
   pkg "scrooo_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.Scrooo",
-    "com.fullbucket.vst.pkg.Scrooo",
+    "de.fullbucket.audiounit.pkg.Scrooo",
+    "de.fullbucket.vst.pkg.Scrooo",
+    "de.fullbucket.vst3.pkg.Scrooo",
   ]
 end
