@@ -1,6 +1,6 @@
 cask "ob-xd" do
-  version "2.8"
-  sha256 "80bdd8cac9946d55828a47cd832b587be3d2ca46ab30b007033a539f21c22741"
+  version "2.10"
+  sha256 "17727448f7a68e92bae4811c87aa381bf6cea75617b2506f77f60406ef2cedfb"
 
   url "https://www.discodsp.net/download/Obxd#{version.major_minor.no_dots}Mac.zip",
       verified: "discodsp.net/"
