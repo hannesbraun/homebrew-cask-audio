@@ -13,7 +13,7 @@ cask "dragonfly-reverb" do
     url "https://github.com/michaelwillis/dragonfly-reverb/"
   end
 
-  pkg "dragonfly-reverb-macOS.pkg"
+  pkg "dragonfly-reverb-mac-universal-#{version}/dragonfly-reverb-macOS.pkg"
 
   uninstall pkgutil: [
     "studio.kx.distrho.dragonfly-reverb-lv2bundles",
