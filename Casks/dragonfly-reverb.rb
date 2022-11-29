@@ -1,16 +1,24 @@
 cask "dragonfly-reverb" do
-  version "3.2.5"
-  sha256 "56175dc6330c30ac4a776e2adf1821a8a42bdf228aae5a120335197892686591"
+  version "3.2.7"
+  sha256 "5e22bbab93ae8361deacb65af38697433124e51f0172e885f7f158f0576a7f69"
 
-  url "https://github.com/michaelwillis/dragonfly-reverb/releases/download/#{version}/DragonflyReverb-MacOS-64bit-v#{version}.zip",
+  url "https://github.com/michaelwillis/dragonfly-reverb/releases/download/#{version}/dragonfly-reverb-mac-universal-#{version}.zip",
       verified: "github.com/michaelwillis/dragonfly-reverb/"
-  appcast "https://github.com/michaelwillis/dragonfly-reverb/releases.atom"
   name "Dragonfly Reverb"
   desc "Set of free reverb effects"
   homepage "https://michaelwillis.github.io/dragonfly-reverb/"
 
-  vst_plugin "DragonflyReverb-MacOS-64bit-v#{version}/DragonflyEarlyReflections.vst"
-  vst_plugin "DragonflyReverb-MacOS-64bit-v#{version}/DragonflyHallReverb.vst"
-  vst_plugin "DragonflyReverb-MacOS-64bit-v#{version}/DragonflyPlateReverb.vst"
-  vst_plugin "DragonflyReverb-MacOS-64bit-v#{version}/DragonflyRoomReverb.vst"
+  livecheck do
+    strategy :git
+    url "https://github.com/michaelwillis/dragonfly-reverb/"
+  end
+
+  pkg "dragonfly-reverb-macOS.pkg"
+
+  uninstall pkgutil: [
+    "studio.kx.distrho.dragonfly-reverb-lv2bundles",
+    "studio.kx.distrho.dragonfly-reverb-vst2bundles",
+    "studio.kx.distrho.dragonfly-reverb-vst3bundles",
+    "studio.kx.distrho.dragonfly-reverb-clapbundles",
+  ]
 end
