@@ -1,6 +1,6 @@
 cask "span" do
-  version "3.14"
-  sha256 "ea9d6e875d916c407f247b20d5894c83c367ff6ab7b56b269f9eb299b880e025"
+  version "3.15"
+  sha256 "dfacb8f8567d5e2b7b971ef189c9f4a9723eb9452e45c4a6810e2d50a29ab615"
 
   url "https://www.voxengo.com/files/VoxengoSPAN_#{version.no_dots}_Mac_AU_AAX_setup.dmg"
   appcast "https://www.voxengo.com/product/span/",
