@@ -1,6 +1,6 @@
 cask "correlometer" do
-  version "1.4"
-  sha256 "6fa80df55cc42a380c9281a7cd2c94448c3780a427e803ff8554005b5cd37121"
+  version "1.6"
+  sha256 "aa1ea94c5b718f6f7d28dc4215aa6ac31bf27eca19a84147d3f11a4f1e42276c"
 
   url "https://www.voxengo.com/files/VoxengoCorrelometer_#{version.no_dots}_Mac_AU_AAX_setup.dmg"
   appcast "https://www.voxengo.com/product/correlometer/",
