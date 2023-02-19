@@ -1,6 +1,6 @@
 cask "blooo" do
-  version "2.3.0"
-  sha256 "565d3a2ec932aecda3025e9771c63db2d02ce03163cd381e3860386c819c82ef"
+  version "2.3.1"
+  sha256 "b39a8c9ca7a8b743ddf2e7b86d508f2977da821ec48a76451885141f6b2c7a29"
 
   url "https://www.fullbucket.de/music/dl/blooo_#{version.dots_to_underscores}_mac.pkg"
   name "the blooo"
