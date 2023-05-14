@@ -1,6 +1,6 @@
 cask "scrooo" do
-  version "2.0.0"
-  sha256 "342bfddc92d1720afe3a5f2260484a100400d623fcaa204daa975517df82852a"
+  version "2.0.1"
+  sha256 "0f2b35cef5f31a9ec5a30a27c2dbc92c2867f41d18751db7a47e01d85e753897"
 
   url "https://www.fullbucket.de/music/dl/scrooo_#{version.dots_to_underscores}_mac.pkg"
   name "the scrooo"
