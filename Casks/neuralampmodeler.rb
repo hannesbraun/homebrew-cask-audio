@@ -15,6 +15,8 @@ cask "neuralampmodeler" do
   pkg "NeuralAmpModeler Installer.pkg"
 
   uninstall pkgutil: [
-    "com.StevenAtkinson.app.NeuralAmpModeler",
+    "com.StevenAtkinson.app.pkg.NeuralAmpModeler",
+    "com.StevenAtkinson.au.pkg.NeuralAmpModeler",
+    "com.StevenAtkinson.vst3.pkg.NeuralAmpModeler",
   ]
 end
