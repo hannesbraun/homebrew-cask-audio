@@ -1,6 +1,6 @@
 cask "frequency-shifter" do
-  version "1.1.1"
-  sha256 "65cd69c2072f3afc08b761e94ab536af8b0f5a159a6283660543e83d7f62f5df"
+  version "2.0.2"
+  sha256 "d5a7ac390f865a26d874364802028bc36909b4b9f4e9a2f87d0f02b7ee6cb537"
 
   url "https://www.fullbucket.de/music/dl/freqshifter_#{version.dots_to_underscores}_mac.pkg"
   name "Frequency Shifter"
@@ -16,7 +16,8 @@ cask "frequency-shifter" do
   pkg "freqshifter_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.FreqShifter",
-    "com.fullbucket.vst.pkg.FreqShifter",
+    "de.fullbucket.audiounit.pkg.FreqShifter",
+    "de.fullbucket.vst.pkg.FreqShifter",
+    "de.fullbucket.vst3.pkg.FreqShifter",
   ]
 end
