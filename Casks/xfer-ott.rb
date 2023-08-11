@@ -1,9 +1,11 @@
 cask "xfer-ott" do
-  version "1.25"
-  sha256 "458dae3cdd12d72277c1af7d5e5ddb6d386562ecffbf79e7743176ee47913b91"
+  version :latest
+  sha256 :no_check
 
-  url "https://xferrecords.com/product_downloads/24/freeware"
-  appcast "https://xferrecords.com/freeware/"
+  url do
+    require "open-uri"
+    URI("https://xferrecords.com/product_downloads/24/freeware").open.base_uri.to_s
+  end
   name "OTT"
   desc "Multiband upwards/downwards compressor"
   homepage "https://xferrecords.com/freeware/"
@@ -14,5 +16,6 @@ cask "xfer-ott" do
     "com.xfer.OTT.AAX",
     "com.xfer.OTT.AU",
     "com.xfer.OTT.VST",
+    "com.xfer.OTT.VST3",
   ]
 end
