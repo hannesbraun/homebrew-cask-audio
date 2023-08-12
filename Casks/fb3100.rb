@@ -1,6 +1,6 @@
 cask "fb3100" do
-  version "1.2.0"
-  sha256 "86d74c946620a71665e67a7413eb7d7eee177336258544910f6702c4971ce86b"
+  version "1.2.1"
+  sha256 "0eb7b8d3ff5febd44c34e1d89386f7f152e5f0fa64c03cbbb874ea969e65c446"
 
   url "https://www.fullbucket.de/music/dl/fb3100_#{version.dots_to_underscores}_mac.pkg"
   name "FB-3100"
