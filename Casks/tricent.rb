@@ -1,6 +1,6 @@
 cask "tricent" do
-  version "1.1.1"
-  sha256 "4f900292fd58a23436bbcfadd66cad7caaa2b6b8554466e0c94ec84cce24f56e"
+  version "1.1.3"
+  sha256 "011eb11a375724798cc490b8380e8ef381c8fb4daf617d8472fd7882de2938c3"
 
   url "https://www.fullbucket.de/music/dl/tricent_#{version.dots_to_underscores}_mac.pkg"
   name "Tricent mk III"
