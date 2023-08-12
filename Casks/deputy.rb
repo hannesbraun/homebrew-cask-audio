@@ -1,6 +1,6 @@
 cask "deputy" do
-  version "1.2.6"
-  sha256 "5292cdf95967ceeeef9987db439528249cadd8da6effb9649b188b3c885c2c26"
+  version "1.3.1"
+  sha256 "f607441bea74ef22e39f9b5722f82e9fe089cba65d8739beb0f7f4848185957a"
 
   url "https://www.fullbucket.de/music/dl/deputy_#{version.dots_to_underscores}_mac.pkg"
   name "The Deputy Mark II"
@@ -16,7 +16,8 @@ cask "deputy" do
   pkg "deputy_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.Deputy",
-    "com.fullbucket.vst.pkg.Deputy",
+    "de.fullbucket.audiounit.pkg.Deputy",
+    "de.fullbucket.vst.pkg.Deputy",
+    "de.fullbucket.vst3.pkg.Deputy",
   ]
 end
