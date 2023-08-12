@@ -1,6 +1,6 @@
 cask "full-bucket-phaser" do
-  version "2.0.0"
-  sha256 "66e365205897451f5e6b89fabeb1a98eebb0092201f61a90d4e3c6100e6e8196"
+  version "2.0.1"
+  sha256 "95d6e8a02cd0941308a2c4593faeff857e30afdb885063c0a6c7830a78af3ee4"
 
   url "https://www.fullbucket.de/music/dl/fbphaser_#{version.dots_to_underscores}_mac.pkg"
   name "Full Bucket Phaser"
