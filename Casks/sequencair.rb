@@ -1,6 +1,6 @@
 cask "sequencair" do
-  version "1.1.4"
-  sha256 "e325b8affa81dd0f77f8fb51f9bee58197736a5edfbf747ec6c0a246fe7480fa"
+  version "1.1.9"
+  sha256 "acaeb5c5cb718905957de6a4c7221e99c89d0b18ca809deca646bd8a7f905d95"
 
   url "https://www.fullbucket.de/music/dl/sequencair_#{version.dots_to_underscores}_mac.pkg"
   name "SequencAir"
