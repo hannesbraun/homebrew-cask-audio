@@ -13,7 +13,7 @@ cask "bucket-one" do
     regex(/v(\d+(?:\.\d+)*)/)
   end
 
-  pkg "pecs_#{version.dots_to_underscores}_mac.pkg"
+  pkg "bucketone_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
     "de.fullbucket.audiounit.pkg.BucketOne",
