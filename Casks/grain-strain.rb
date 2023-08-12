@@ -1,8 +1,8 @@
 cask "grain-strain" do
-  version "1.0.0"
-  sha256 "dfb5f09e975ea279002a403e7bc20773203836f02bcf4e1109afe22ae439b868"
+  version "1.1.1"
+  sha256 "1b40ff7590de91346b79121976df4c345c3c5c9237e5fc5b67a4cf0d47a20a0c"
 
-  url "https://www.fullbucket.de/music/dl/grainstrain_#{version.dots_to_underscores}_N_mac.pkg"
+  url "https://www.fullbucket.de/music/dl/grainstrain_#{version.dots_to_underscores}_mac.pkg"
   name "Grain Strain"
   desc "Grain straining effect"
   homepage "https://www.fullbucket.de/music/grainstrain.html"
@@ -13,10 +13,11 @@ cask "grain-strain" do
     regex(/v(\d+(?:\.\d+)*)/)
   end
 
-  pkg "grainstrain_#{version.dots_to_underscores}_N_mac.pkg"
+  pkg "grainstrain_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.GrainStrain",
-    "com.fullbucket.vst.pkg.GrainStrain",
+    "de.fullbucket.audiounit.pkg.GrainStrain",
+    "de.fullbucket.vst.pkg.GrainStrain",
+    "de.fullbucket.vst3.pkg.GrainStrain",
   ]
 end
