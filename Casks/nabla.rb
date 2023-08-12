@@ -1,6 +1,6 @@
 cask "nabla" do
-  version "1.3.0"
-  sha256 "f86dc51c031758ac5f1f2d7385eba0041a3a339aaf45e21cde75af524799f1ac"
+  version "1.3.1"
+  sha256 "d7e2cd91e5ed037ace2a07b19030c5cb9474f761971f171c529accd135919ea4"
 
   url "https://www.fullbucket.de/music/dl/nabla_#{version.dots_to_underscores}_mac.pkg"
   name "Nabla"
