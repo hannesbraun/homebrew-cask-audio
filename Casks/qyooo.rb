@@ -1,6 +1,6 @@
 cask "qyooo" do
-  version "1.1.3"
-  sha256 "75a85ca2f53b859d2cb09c02db18162481a71ce07ae80a25b043ed836e30e0bb"
+  version "1.2.1"
+  sha256 "e0fcde90d6516d6c05a2942a32e9a877e8293b00bcbfce6a1b52906bce005c2b"
 
   url "https://www.fullbucket.de/music/dl/qyooo_#{version.dots_to_underscores}_mac.pkg"
   name "the qyooo"
@@ -16,7 +16,8 @@ cask "qyooo" do
   pkg "qyooo_#{version.dots_to_underscores}_mac.pkg"
 
   uninstall pkgutil: [
-    "com.fullbucket.audiounit.pkg.qyooo",
-    "com.fullbucket.vst.pkg.qyooo",
+    "de.fullbucket.audiounit.pkg.qyooo",
+    "de.fullbucket.vst.pkg.qyooo",
+    "de.fullbucket.vst3.pkg.qyooo",
   ]
 end
