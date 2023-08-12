@@ -1,6 +1,6 @@
 cask "full-bucket-mps" do
-  version "1.2.0"
-  sha256 "1b7ccc23fd6bbdc21de358ffdb0095537e1a707329edc6ed33280b6fc62ad361"
+  version "1.2.1"
+  sha256 "f4c80387e1898ec0bda00e9e734a568d4e739bcb8fd408537d0b53be7c546985"
 
   url "https://www.fullbucket.de/music/dl/mps_#{version.dots_to_underscores}_mac.pkg"
   name "MPS"
