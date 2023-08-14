@@ -7,6 +7,7 @@ cask "8-bit-shaper" do
     URI("https://xferrecords.com/product_downloads/28/freeware").open.base_uri.to_s
   end
   name "8-Bit Shaper"
+  desc "Bitcrusher plugin"
   homepage "https://xferrecords.com/freeware/"
 
   pkg "Install_Xfer_8BitShaper.pkg"
