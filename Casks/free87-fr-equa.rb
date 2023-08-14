@@ -4,6 +4,7 @@ cask "free87-fr-equa" do
 
   url "https://www.eareckon.com/free/FREQUA87_#{version.no_dots}_Mac.zip"
   name "FR-EQUA 87"
+  desc "Equalizer plugin"
   homepage "https://www.eareckon.com/en/products/freebies.html"
 
   livecheck do

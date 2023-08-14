@@ -4,6 +4,7 @@ cask "free87-fr-comp" do
 
   url "https://www.eareckon.com/free/FRCOMP87_#{version.no_dots}_Mac.zip"
   name "FR-COMP 87"
+  desc "Compressor plugin"
   homepage "https://www.eareckon.com/en/products/freebies.html"
 
   livecheck do

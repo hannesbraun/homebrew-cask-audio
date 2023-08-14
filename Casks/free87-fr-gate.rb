@@ -4,6 +4,7 @@ cask "free87-fr-gate" do
 
   url "https://www.eareckon.com/free/FRGATE87_#{version.no_dots}_Mac.zip"
   name "FR-GATE 87"
+  desc "Gate plugin"
   homepage "https://www.eareckon.com/en/products/freebies.html"
 
   livecheck do

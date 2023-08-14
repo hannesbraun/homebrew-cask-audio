@@ -4,6 +4,7 @@ cask "free87-fr-limit" do
 
   url "https://www.eareckon.com/free/FRLIMIT87_#{version.no_dots}_Mac.zip"
   name "FR-LIMIT 87"
+  desc "Limiter plugin"
   homepage "https://www.eareckon.com/en/products/freebies.html"
 
   livecheck do
