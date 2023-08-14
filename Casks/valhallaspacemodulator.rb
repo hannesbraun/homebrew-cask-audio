@@ -1,12 +1,17 @@
 cask "valhallaspacemodulator" do
-  version "1.2.5"
-  sha256 "ccc245caf6c9698aa20a857092f3266ed5496f95baa71d1a5e1bbf8a2d871739"
+  version "1.2.8"
+  sha256 "12033f7f35e97e6e06e3852e42f50caff17165bc6e79696d6837d61b34858598"
 
-  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/spacemod/ValhallaSpaceModulatorOSX_#{version.dots_to_underscores}.zip",
+  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/spacemod/ValhallaSpaceModulatorOSX_#{version.dots_to_underscores}.dmg",
       verified: "valhallaproduction.s3-us-west-2.amazonaws.com/"
-  appcast "https://valhalladsp.com/shop/modulation/valhalla-space-modulator/"
   name "Valhalla Space Modulator"
   homepage "https://valhalladsp.com/shop/modulation/valhalla-space-modulator/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/Current Version:\s(\d+(?:\.\d+)+)/)
+  end
 
   pkg "ValhallaSpaceModulatorOSX.pkg"
 
