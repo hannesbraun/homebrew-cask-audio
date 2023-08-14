@@ -1,12 +1,17 @@
 cask "valhallasupermassive" do
-  version "1.5.0"
-  sha256 "90ec407a01aa59a47d22c0236521cafe4e01ba75f78b389c94461f943bf5d124"
+  version "2.5.0"
+  sha256 "393a92c77b02625c539b233be471a2fb3e93eb1ff43b7f9f8956f77dde72323e"
 
-  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSX_#{version.dots_to_underscores}v2.zip",
+  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSX_#{version.dots_to_underscores}.dmg",
       verified: "valhallaproduction.s3-us-west-2.amazonaws.com/"
-  appcast "https://valhalladsp.com/shop/reverb/valhalla-supermassive/"
   name "Valhalla Supermassive"
   homepage "https://valhalladsp.com/shop/reverb/valhalla-supermassive/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/Current Version:\s(\d+(?:\.\d+)+)/)
+  end
 
   pkg "ValhallaSupermassiveOSX.pkg"
 
