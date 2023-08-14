@@ -1,13 +1,20 @@
 cask "correlometer" do
-  version "1.6"
-  sha256 "aa1ea94c5b718f6f7d28dc4215aa6ac31bf27eca19a84147d3f11a4f1e42276c"
+  version "1.7"
+  sha256 "f21a44ffb34f3d2c073bfbfecd96e1b300818b78b9a08487cbc3f2d904d3aab1"
 
   url "https://www.voxengo.com/files/VoxengoCorrelometer_#{version.no_dots}_Mac_AU_AAX_setup.dmg"
-  appcast "https://www.voxengo.com/product/correlometer/",
-          must_contain: version.no_dots
   name "Voxengo Correlometer"
   desc "Multi-Band Correlometer"
   homepage "https://www.voxengo.com/product/correlometer/"
+
+  livecheck do
+    url "https://www.voxengo.com/product/correlometer/"
+    strategy :page_match do |page|
+      page.scan(/VoxengoCorrelometer_(\d)(\d+)_Mac_AU_AAX_setup\.dmg/).map do |match|
+        "#{match[0]}.#{match[1]}"
+      end
+    end
+  end
 
   audio_unit_plugin "Correlometer.component"
   artifact "ProTools AAX/Correlometer.aaxplugin",
