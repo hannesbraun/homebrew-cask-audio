@@ -4,7 +4,8 @@ cask "8-bit-shaper" do
 
   url do
     require "open-uri"
-    URI("https://xferrecords.com/product_downloads/28/freeware").open.base_uri.to_s
+    [URI("https://xferrecords.com/product_downloads/28/freeware").open.base_uri.to_s,
+     { verified: "xfer-active-storage.s3.us-west-1.amazonaws.com" }]
   end
   name "8-Bit Shaper"
   desc "Bitcrusher plugin"
