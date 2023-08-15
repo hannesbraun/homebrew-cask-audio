@@ -8,6 +8,12 @@ cask "freeclip" do
   desc "Intuitive multi algorithm soft clipper"
   homepage "https://www.vennaudio.com/free-clip/"
 
+  livecheck do
+    strategy :page_match
+    url :homepage
+    regex(%r{Download Mac Audio Unit/VST v(\d+(?:\.\d+)*)})
+  end
+
   audio_unit_plugin "FreeClip.component"
   vst_plugin "FreeClip.vst"
 end
