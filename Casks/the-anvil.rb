@@ -5,7 +5,8 @@ cask "the-anvil" do
   url "https://static.kvraudio.com/files/1546/ignite_amps_the_anvil_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
   name "The Anvil"
-  homepage "http://www.igniteamps.com/"
+  desc "Digital emulation of a three channels tube preamplifier for guitar"
+  homepage "https://www.igniteamps.com/"
 
   livecheck do
     url :homepage
