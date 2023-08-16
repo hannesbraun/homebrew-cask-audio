@@ -5,10 +5,14 @@ cask "shb1" do
   # static.kvraudio.com was verified as official when first introduced to the cask
   url "https://static.kvraudio.com/files/1546/ignite_amps_shb-1_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
-  appcast "https://www.kvraudio.com/product/shb-1-by-ignite-amps/",
-          must_contain: version.major_minor
   name "SHB-1"
   homepage "http://www.igniteamps.com/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/SHB-1 v(\d+(?:\.\d+)*)/)
+  end
 
   audio_unit_plugin "AU/SHB-1.component"
   vst_plugin "VST/SHB-1.vst"
