@@ -1,13 +1,23 @@
 cask "odin2" do
-  version "2.3.2"
-  sha256 "607828fcd67b5c3b4c08ca0e885c8bc96c5a0ff9b1e532d3ea81c7f0f9ca106d"
+  version "2.3.4,medcu1epbxreucz"
+  sha256 "ecfcbdf9058f6ddc6cdbc344fc32bee5f7cc0ffe135432607c36a6274e47624b"
 
-  url "https://www.thewavewarden.com/assets/Odin#{version}MacInstaller.pkg"
+  url "https://dl.dropboxusercontent.com/s/#{version.csv.second}/Odin#{version.csv.first}MacInstaller.pkg",
+      verified: "dl.dropboxusercontent.com/s/#{version.csv.second}"
   name "Odin 2"
   desc "Synthesizer plugin"
   homepage "https://www.thewavewarden.com/odin2"
 
-  pkg "Odin#{version}MacInstaller.pkg",
+  livecheck do
+    url :homepage
+    strategy :page_match do |page|
+      page.scan(%r{https://dl.dropboxusercontent.com/s/(\S+)/Odin(\d+(?:\.\d+)*)MacInstaller.pkg}).map do |match|
+        "#{match[1]},#{match[0]}"
+      end
+    end
+  end
+
+  pkg "Odin#{version.csv.first}MacInstaller.pkg",
       choices: [
         {
           "choiceIdentifier" => "installer_choice_1",
@@ -19,10 +29,16 @@ cask "odin2" do
           "choiceAttribute"  => "selected",
           "attributeSetting" => 1,
         },
+        {
+          "choiceIdentifier" => "installer_choice_3",
+          "choiceAttribute"  => "selected",
+          "attributeSetting" => 1,
+        },
       ]
 
   uninstall pkgutil: [
     "com.thewavewarden.pkg.odin2AU",
+    "com.thewavewarden.pkg.odin2CLAP",
     "com.thewavewarden.pkg.odin2VST",
   ]
 end
