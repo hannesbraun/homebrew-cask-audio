@@ -8,6 +8,12 @@ cask "profet" do
   name "ProF.E.T."
   homepage "http://www.igniteamps.com/"
 
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/ProF\.E\.T\. v(\d+(?:\.\d+)*)/)
+  end
+
   audio_unit_plugin "AU/ProFET.component"
   vst_plugin "VST/ProFET.vst"
   vst3_plugin "VST3/ProFET.vst3"
