@@ -5,7 +5,8 @@ cask "ts999" do
   url "https://static.kvraudio.com/files/1546/ignite_amps_ts-999_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
   name "TS-999 SubScreamer"
-  homepage "http://www.igniteamps.com/"
+  desc "Digital emulation of an overdrive pedal for guitar"
+  homepage "https://www.igniteamps.com/"
 
   livecheck do
     url :homepage
