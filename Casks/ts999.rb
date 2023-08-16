@@ -4,9 +4,14 @@ cask "ts999" do
 
   url "https://static.kvraudio.com/files/1546/ignite_amps_ts-999_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
-  appcast "https://www.kvraudio.com/product/ts-999-by-ignite-amps/"
   name "TS-999 SubScreamer"
   homepage "http://www.igniteamps.com/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/TS-999 SubScreamer v(\d+(?:\.\d+)*)/)
+  end
 
   audio_unit_plugin "AU/TS-999.component"
   vst_plugin "VST/TS-999.vst"
