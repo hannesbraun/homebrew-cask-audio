@@ -4,9 +4,14 @@ cask "tpa1" do
 
   url "https://static.kvraudio.com/files/1546/ignite_amps_tpa-1_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
-  appcast "https://www.kvraudio.com/product/tpa-1-by-ignite-amps/"
   name "TPA-1"
   homepage "http://www.igniteamps.com/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/TPA-1 v(\d+(?:\.\d+)*)/)
+  end
 
   audio_unit_plugin "AU/TPA-1.component"
   vst_plugin "VST/TPA-1.vst"
