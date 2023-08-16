@@ -4,9 +4,14 @@ cask "the-anvil" do
 
   url "https://static.kvraudio.com/files/1546/ignite_amps_the_anvil_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
-  appcast "https://www.kvraudio.com/product/the-anvil-by-ignite-amps/"
   name "The Anvil"
   homepage "http://www.igniteamps.com/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/The Anvil v(\d+(?:\.\d+)*)/)
+  end
 
   audio_unit_plugin "AU/Anvil.component"
   vst_plugin "VST/Anvil.vst"
