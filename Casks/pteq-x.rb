@@ -4,10 +4,15 @@ cask "pteq-x" do
 
   url "https://static.kvraudio.com/files/1546/ignite_amps_pteq-x_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
-  appcast "https://www.kvraudio.com/product/pteq-x-by-ignite-amps/"
   name "PTEq-X"
   desc "Digital emulation of 3 famous vintage passive program equalizers"
   homepage "https://www.igniteamps.com/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/PTEq-X v(\d+(?:\.\d+)*)/)
+  end
 
   audio_unit_plugin "AU/PTEq-X.component"
   vst_plugin "VST/PTEq-X.vst"
