@@ -5,7 +5,8 @@ cask "tsb1" do
   url "https://static.kvraudio.com/files/1546/ignite_amps_tsb-1_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
   name "TSB-1 Tyrant Screamer"
-  homepage "http://www.igniteamps.com/"
+  desc "Amp inspired by the most famous green \"808\" overdrive pedal"
+  homepage "https://www.igniteamps.com/"
 
   livecheck do
     url :homepage
