@@ -4,9 +4,9 @@ cask "profet" do
 
   url "https://static.kvraudio.com/files/1546/ignite_amps_profet_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
-  appcast "https://www.kvraudio.com/product/prof-e-t-by-ignite-amps/"
   name "ProF.E.T."
-  homepage "http://www.igniteamps.com/"
+  desc "Digital emulation of a high gain distortion preamp/stomp-box for guitar"
+  homepage "https://www.igniteamps.com/"
 
   livecheck do
     url :homepage
