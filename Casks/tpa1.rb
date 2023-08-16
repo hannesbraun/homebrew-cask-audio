@@ -5,7 +5,8 @@ cask "tpa1" do
   url "https://static.kvraudio.com/files/1546/ignite_amps_tpa-1_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
   name "TPA-1"
-  homepage "http://www.igniteamps.com/"
+  desc "Digital emulation of a class AB tube power amplifier for guitar"
+  homepage "https://www.igniteamps.com/"
 
   livecheck do
     url :homepage
