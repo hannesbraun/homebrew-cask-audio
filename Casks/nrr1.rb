@@ -4,9 +4,14 @@ cask "nrr1" do
 
   url "https://static.kvraudio.com/files/1546/ignite_amps_nrr-1_#{version.dots_to_underscores}_mac.zip",
       verified: "static.kvraudio.com/"
-  appcast "https://www.kvraudio.com/product/nrr-1-by-ignite-amps/"
   name "NRR-1"
   homepage "http://www.igniteamps.com/"
+
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/NRR-1 v(\d+(?:\.\d+)*)/)
+  end
 
   audio_unit_plugin "AU/NRR-1.component"
   vst_plugin "VST/NRR-1.vst"
