@@ -7,7 +7,7 @@ cask "pteq-x" do
   appcast "https://www.kvraudio.com/product/pteq-x-by-ignite-amps/"
   name "PTEq-X"
   desc "Digital emulation of 3 famous vintage passive program equalizers"
-  homepage "http://www.igniteamps.com/"
+  homepage "https://www.igniteamps.com/"
 
   audio_unit_plugin "AU/PTEq-X.component"
   vst_plugin "VST/PTEq-X.vst"
