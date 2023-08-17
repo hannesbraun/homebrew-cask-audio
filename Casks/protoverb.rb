@@ -17,7 +17,7 @@ cask "protoverb" do
     end
   end
 
-  pkg "Protoverb#{version.csv.second}Mac/Protoverb #{version.before_comma} Installer.pkg"
+  pkg "Protoverb_#{version.csv.second}_Mac/Protoverb #{version.before_comma} Installer.pkg"
 
   uninstall pkgutil: [
     "com.u-he.Protoverb.au.pkg",
