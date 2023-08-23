@@ -1,6 +1,6 @@
 cask "regrader" do
-  version "1.0.4,484444ad43fa2db726e293fb3001fff19d04336e9f5b0e959390577b9287a19c"
-  sha256 "00dd36b616b33ba826ffddb37534e255633669807081c6086e1adacc2da74452"
+  version "1.0.5,1221198c4810b94c321273846b0185ea6136b0be8a9494490e0c52eb26c313d2"
+  sha256 "18c5c17ae67de47fa908aa6543391ae4ea32d44f6ed575f9cf4a9560bc5be47a"
 
   url "https://www.igorski.nl/download/retrieve/#{version.csv.second}"
   name "Regrader"
