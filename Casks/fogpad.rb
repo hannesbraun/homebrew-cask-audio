@@ -1,6 +1,6 @@
 cask "fogpad" do
-  version "1.0.2,777c289f331ee762da84b0a889b83d8b4fd9729d78c3e2041c817cb4061fed8e"
-  sha256 "a7675fa3ef13f14267a7c2284b8245cdad9f97a8b077621ab354601d41c00516"
+  version "1.0.3,2c3257f83b3f74cbf1aa45f2b1dfc6dcfe6334d764c1526aa3500e7e12cec68d"
+  sha256 "0059987111d7f6724a4d7299379127a2164bc7575b22379696254d6a34e9e49e"
 
   url "https://www.igorski.nl/download/retrieve/#{version.csv.second}"
   name "FogPad"
