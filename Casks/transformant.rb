@@ -1,6 +1,6 @@
 cask "transformant" do
-  version "1.0.3,5479b625bcdd53d5018a34c590947305ac83e3ea4ec5f61045edb64eeb64fc26"
-  sha256 "4df6f0414f7bbe7a0de689dff31dc37d264f9ff53d63f974ba53f0e0bcaecaf8"
+  version "1.0.4,dc2c83e4091274b78c063f74d6d47697e39690e48d44a9c3b2192df476e8538c"
+  sha256 "676390d9a48403ec61f02e9d330753d47cf287133b311a17a5113e9fddeae3de"
 
   url "https://www.igorski.nl/download/retrieve/#{version.csv.second}"
   name "Transformant"
