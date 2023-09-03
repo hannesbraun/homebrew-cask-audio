@@ -4,6 +4,7 @@ cask "molot" do
 
   url "https://www.tokyodawn.net/labs/vladgsound/Molot#{version.no_dots}.dmg"
   name "VladG Molot Compressor"
+  desc "Compressor plugin"
   homepage "https://www.tokyodawn.net/vladg-molot-compressor/"
 
   audio_unit_plugin "Molot.component"
