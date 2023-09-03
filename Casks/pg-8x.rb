@@ -1,6 +1,6 @@
 cask "pg-8x" do
   version "2.0.13"
-  sha256 "68e49fe103ba69c390229cf2c8bd9353ab7d587bcc5ba036d32ebcf053032bef"
+  sha256 :no_check
 
   url "https://drive.google.com/uc?export=download&id=1zbSGazrU2r0HRH_rskQk1kXRj10nyKFJ"
   name "PG-8X"
