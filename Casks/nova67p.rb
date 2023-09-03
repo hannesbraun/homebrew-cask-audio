@@ -4,6 +4,7 @@ cask "nova67p" do
 
   url "https://www.tokyodawn.net/labs/vladgsound/Nova67P_v#{version.dots_to_underscores}-Mac.dmg"
   name "VladG Nova-67P"
+  desc "Parallel parametric equalizer combined with a compressor"
   homepage "https://www.tokyodawn.net/vladg-nova-67p/"
 
   audio_unit_plugin "Nova67P.component"
