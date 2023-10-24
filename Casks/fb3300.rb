@@ -1,6 +1,6 @@
 cask "fb3300" do
-  version "1.2.2"
-  sha256 "6fe9c7fcc6735a7dfc0e4231a34ab05a06ca61f99ebd39008b636b5356a768aa"
+  version "1.2.3"
+  sha256 "b4f1b11fd18bee6638ca4cfb0a0d6c0877ab727d1079c2487326563566c00ae1"
 
   url "https://www.fullbucket.de/music/dl/fb3300_#{version.dots_to_underscores}_mac.pkg"
   name "FB-3300"
