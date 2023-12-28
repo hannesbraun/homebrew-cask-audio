@@ -1,6 +1,6 @@
 cask "fb7999" do
-  version "1.1.3"
-  sha256 "4e83f20a5ba748428623f41baad6e2415fefedb3115aefb599eae80e31411859"
+  version "1.1.4"
+  sha256 "b83419326f37ab6f9e7937f428e750295a182c4120000fea3f07e4f22eaa9e8e"
 
   url "https://www.fullbucket.de/music/dl/fb7999_#{version.dots_to_underscores}_mac.pkg"
   name "FB-7999"
