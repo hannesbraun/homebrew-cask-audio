@@ -1,10 +1,11 @@
 cask "valhallasupermassive" do
-  version "2.5.0"
-  sha256 "393a92c77b02625c539b233be471a2fb3e93eb1ff43b7f9f8956f77dde72323e"
+  version "3.0.0"
+  sha256 "a416c6bfb2e2383de30832c84a960bbbc6032c9cc8d747cd27086c658ddea6ce"
 
-  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSX_#{version.dots_to_underscores}.dmg",
+  url "https://valhallaproduction.s3-us-west-2.amazonaws.com/supermassive/ValhallaSupermassiveOSX_#{version.dots_to_underscores}v3.dmg",
       verified: "valhallaproduction.s3-us-west-2.amazonaws.com/"
   name "Valhalla Supermassive"
+  desc "Plugin for massive reverbs, harmonic echoes and space sounds"
   homepage "https://valhalladsp.com/shop/reverb/valhalla-supermassive/"
 
   livecheck do
