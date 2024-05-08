@@ -7,10 +7,8 @@ cask "limiter-no6" do
   desc "Modular limiter"
   homepage "https://www.tokyodawn.net/vladg-limiter-n6/"
 
+  deprecate! date: "2024-05-08", because: :discontinued
+
   audio_unit_plugin "Limiter6.component"
   vst_plugin "Limiter6.vst"
-
-  caveats do
-    discontinued
-  end
 end

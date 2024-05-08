@@ -7,10 +7,8 @@ cask "nova67p" do
   desc "Parallel parametric equalizer combined with a compressor"
   homepage "https://www.tokyodawn.net/vladg-nova-67p/"
 
+  deprecate! date: "2024-05-08", because: :discontinued
+
   audio_unit_plugin "Nova67P.component"
   vst_plugin "Nova67P.vst"
-
-  caveats do
-    discontinued
-  end
 end

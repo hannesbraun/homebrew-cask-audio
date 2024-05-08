@@ -7,10 +7,8 @@ cask "molot" do
   desc "Compressor plugin"
   homepage "https://www.tokyodawn.net/vladg-molot-compressor/"
 
+  deprecate! date: "2024-05-08", because: :discontinued
+
   audio_unit_plugin "Molot.component"
   vst_plugin "Molot.vst"
-
-  caveats do
-    discontinued
-  end
 end
