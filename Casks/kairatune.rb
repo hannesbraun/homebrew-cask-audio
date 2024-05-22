@@ -13,7 +13,7 @@ cask "kairatune" do
     regex(/Kairatune (\d+(?:\.\d+)+)/)
   end
 
-  pkg "Kairatune #{version} macOS.pkg"
+  pkg "Kairatune-#{version}-macOS.pkg"
 
   uninstall pkgutil: "com.futucraft.kairatune"
 end
