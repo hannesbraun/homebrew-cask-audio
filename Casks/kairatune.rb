@@ -1,6 +1,6 @@
 cask "kairatune" do
-  version "1.2.8"
-  sha256 "5767bcc9dfe7cfd533fa75e7c717c1619e88c5a8229aeee9d58e9466e205ee34"
+  version "1.2.9"
+  sha256 "7304691900a2625e5677e6fa075f15ba627083b643a5e5fa6349962044ec4065"
 
   url "https://futucraft.com/download/kairatune-#{version.dots_to_hyphens}-mac-os/"
   name "Kairatune"
@@ -15,7 +15,5 @@ cask "kairatune" do
 
   pkg "Kairatune #{version} macOS.pkg"
 
-  uninstall pkgutil: [
-    "com.futucraft.kairatune",
-  ]
+  uninstall pkgutil: "com.futucraft.kairatune"
 end
