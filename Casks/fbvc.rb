@@ -1,6 +1,6 @@
 cask "fbvc" do
-  version "1.1.1"
-  sha256 "1385afbd9ebc8ca4683dd652605916bdcdf162609a94cf907badac303ae80949"
+  version "1.1.2"
+  sha256 "984052891ae64a29a5465a27c60871db018ec14f3ff5bc8766ee2faea9e75903"
 
   url "https://www.fullbucket.de/music/dl/fbvc_#{version.dots_to_underscores}_mac.pkg"
   name "Full Bucket Vocoder FBVC"
