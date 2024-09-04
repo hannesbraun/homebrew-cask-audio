@@ -1,6 +1,6 @@
 cask "krush" do
-  version "1.2.5"
-  sha256 "5f3f03d07b7d13f5fd2b1cdb5b48137d1e43d4000a89b0f34403fdbe5687c642"
+  version "1.3.0"
+  sha256 "bfefe698110dc3576c7f1c57f2ee827d4f053fd4ca83539fe297d50486a65390"
 
   url "https://www.tritik.com/downloads/plugins/krush/Tritik_Krush_v#{version}_macOS.zip"
   name "Krush"
