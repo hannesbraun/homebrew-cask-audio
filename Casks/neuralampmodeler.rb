@@ -1,6 +1,6 @@
 cask "neuralampmodeler" do
-  version "0.7.7"
-  sha256 "6cef3bf8013e90c06db63a32e723c613329d9de6dd3360a8cea043d2376d83da"
+  version "0.7.9"
+  sha256 "1338603a93aa91b13fac95b04960e5991bd809b2b4e9c4af4b2e4ef219c943ff"
 
   url "https://github.com/sdatkinson/NeuralAmpModelerPlugin/releases/download/v#{version}/NeuralAmpModeler-v#{version}-mac.dmg"
   name "Neural Amp Modeler"
