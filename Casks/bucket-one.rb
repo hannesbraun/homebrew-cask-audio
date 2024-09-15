@@ -1,6 +1,6 @@
 cask "bucket-one" do
-  version "1.1.0"
-  sha256 "dd8c1edafedc3736872cc36fde5121f868dc3c6044c0b20b77b3a3d6c3c353ac"
+  version "1.1.1"
+  sha256 "7e707b030ac7db9fa356daca6677cb8a243c1c0cfca9415063664b58f48a81cb"
 
   url "https://www.fullbucket.de/music/dl/bucketone_#{version.dots_to_underscores}_mac.pkg"
   name "Bucket ONE"
@@ -20,4 +20,6 @@ cask "bucket-one" do
     "de.fullbucket.vst.pkg.BucketOne",
     "de.fullbucket.vst3.pkg.BucketOne",
   ]
+
+  zap trash: "~/Music/FullBucketMusic/bucketone.ini"
 end
