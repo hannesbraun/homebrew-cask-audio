@@ -1,6 +1,6 @@
 cask "kairatune" do
-  version "1.2.9"
-  sha256 "7304691900a2625e5677e6fa075f15ba627083b643a5e5fa6349962044ec4065"
+  version "1.3.0"
+  sha256 "498ce3c671d7ddfd583eb013c0da580795d210854550578807b9ae987227dfb8"
 
   url "https://futucraft.com/download/kairatune-#{version.dots_to_hyphens}-mac-os/"
   name "Kairatune"
