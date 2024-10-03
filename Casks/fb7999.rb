@@ -1,6 +1,6 @@
 cask "fb7999" do
-  version "1.1.4"
-  sha256 "b83419326f37ab6f9e7937f428e750295a182c4120000fea3f07e4f22eaa9e8e"
+  version "1.1.6"
+  sha256 "6bec4107160542feaa7d62a370b58c714c9e65cdcd07fcf880908dc6b00ac1ae"
 
   url "https://www.fullbucket.de/music/dl/fb7999_#{version.dots_to_underscores}_mac.pkg"
   name "FB-7999"
@@ -20,4 +20,6 @@ cask "fb7999" do
     "de.fullbucket.vst.pkg.FB7999",
     "de.fullbucket.vst3.pkg.FB7999",
   ]
+
+  zap trash: "~/Music/FullBucketMusic/fb7999.ini"
 end
