@@ -1,6 +1,6 @@
 cask "fb3300" do
-  version "1.2.4"
-  sha256 "53418e98a3f95bf0e3e2e61a24780df4f449455aeb94966103bad6e77d4d5e1b"
+  version "1.2.5"
+  sha256 "13f5a7951520ab11edfc9e6103bfd5b98e98427f454e293bcfcc0105091969fd"
 
   url "https://www.fullbucket.de/music/dl/fb3300_#{version.dots_to_underscores}_mac.pkg"
   name "FB-3300"
@@ -20,4 +20,6 @@ cask "fb3300" do
     "de.fullbucket.vst.pkg.FB3300",
     "de.fullbucket.vst3.pkg.FB3300",
   ]
+
+  zap trash: "~/Music/FullBucketMusic/fb3300.ini"
 end
