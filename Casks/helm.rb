@@ -14,7 +14,5 @@ cask "helm" do
 
   pkg "Helm_v#{version.dots_to_underscores}_r.pkg"
 
-  uninstall pkgutil: [
-    "org.tytel.helm",
-  ]
+  uninstall pkgutil: "org.tytel.helm"
 end

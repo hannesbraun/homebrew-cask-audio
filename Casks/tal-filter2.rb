@@ -10,8 +10,8 @@ cask "tal-filter2" do
 
   uninstall pkgutil: [
     "com.talsoftware.pkg.TAL-Filter-2-AAX",
-    "com.talsoftware.pkg.TAL-Filter-2-VST3",
-    "com.talsoftware.pkg.TAL-Filter-2-VST",
     "com.talsoftware.pkg.TAL-Filter-2-AU",
+    "com.talsoftware.pkg.TAL-Filter-2-VST",
+    "com.talsoftware.pkg.TAL-Filter-2-VST3",
   ]
 end

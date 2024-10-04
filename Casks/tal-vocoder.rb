@@ -10,8 +10,8 @@ cask "tal-vocoder" do
 
   uninstall pkgutil: [
     "com.talsoftware.pkg.TAL-Vocoder-2-AAX",
-    "com.talsoftware.pkg.TAL-Vocoder-2-VST3",
-    "com.talsoftware.pkg.TAL-Vocoder-2-VST",
     "com.talsoftware.pkg.TAL-Vocoder-2-AU",
+    "com.talsoftware.pkg.TAL-Vocoder-2-VST",
+    "com.talsoftware.pkg.TAL-Vocoder-2-VST3",
   ]
 end

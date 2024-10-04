@@ -10,8 +10,8 @@ cask "tal-chorus-lx" do
 
   uninstall pkgutil: [
     "com.talsoftware.pkg.TAL-Chorus-LX-AAX",
-    "com.talsoftware.pkg.TAL-Chorus-LX-VST3",
-    "com.talsoftware.pkg.TAL-Chorus-LX-VST",
     "com.talsoftware.pkg.TAL-Chorus-LX-AU",
+    "com.talsoftware.pkg.TAL-Chorus-LX-VST",
+    "com.talsoftware.pkg.TAL-Chorus-LX-VST3",
   ]
 end

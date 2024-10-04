@@ -1,5 +1,5 @@
 cask "crystal" do
-  version :latest 
+  version :latest
   sha256 :no_check
 
   url "https://www.greenoak.com/crystal/dl/Crystal.dmg"

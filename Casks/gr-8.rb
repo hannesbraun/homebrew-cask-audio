@@ -18,5 +18,5 @@ cask "gr-8" do
 
   pkg "GR-8-AU-#{version.after_comma}/GR-8.pkg"
 
-  uninstall pkgutil: ["com.mygreatcompany.pkg.GR-8"]
+  uninstall pkgutil: "com.mygreatcompany.pkg.GR-8"
 end

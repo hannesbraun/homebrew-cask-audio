@@ -18,7 +18,7 @@ cask "ob-xd" do
   uninstall pkgutil: %w[
     ob-xdau
     ob-xdcontent
-    ob-xdvst3
     ob-xdst
+    ob-xdvst3
   ]
 end

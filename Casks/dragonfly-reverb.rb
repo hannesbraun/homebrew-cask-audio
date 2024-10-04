@@ -16,9 +16,9 @@ cask "dragonfly-reverb" do
   pkg "dragonfly-reverb-AudioPlugins.pkg"
 
   uninstall pkgutil: [
+    "studio.kx.distrho.dragonfly-reverb-clapbundles",
     "studio.kx.distrho.dragonfly-reverb-lv2bundles",
     "studio.kx.distrho.dragonfly-reverb-vst2bundles",
     "studio.kx.distrho.dragonfly-reverb-vst3bundles",
-    "studio.kx.distrho.dragonfly-reverb-clapbundles",
   ]
 end
