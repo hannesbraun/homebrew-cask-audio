@@ -1,6 +1,6 @@
 cask "bucket-one" do
-  version "1.1.1"
-  sha256 "7e707b030ac7db9fa356daca6677cb8a243c1c0cfca9415063664b58f48a81cb"
+  version "1.1.2"
+  sha256 "7e66f859f2ced42b11adc79f2c1abb218988512831780e94b6370c3c2c150982"
 
   url "https://www.fullbucket.de/music/dl/bucketone_#{version.dots_to_underscores}_mac.pkg"
   name "Bucket ONE"
